@@ -1,0 +1,29 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.pagecon{
+    top: 0vh;
+    left: 0vh;
+    width: 100vw;
+    height: 100vh;
+    background-color:#F1E4B0 ;
+}
+/*NAV SETTINGS*/
+.navbar{
+height: 10vh;
+width: 100%;
+background-color: #FF6A00;
+}
+/*MAIN SETTINGS*/
+.mainbody{
+    height: 80vh;
+    width: 100vw;
+
+}
+/*FOOTER SETTINGS*/
+.footerbar{
+    height: 10vh;
+    width: 100%;
+    background-color: #FF6A00;
+}

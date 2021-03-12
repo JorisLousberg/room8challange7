@@ -11,7 +11,12 @@
     <div class="pagecon">
         <nav><div class="navbar"></div></nav>        
         <div class="mainbody"></div>
-        <footer><div class="footerbar"></div></footer>        
+        <footer>
+          <div class="footer">
+            <div id="footercrtext">&copy; V!st@Cars(2021)</div>
+            <div id="footerteltext">Telefoonnummer: 06 12345678</div>
+          </div>
+      </footer>        
     </div>
     
 </body>

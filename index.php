@@ -15,6 +15,7 @@
           <div class="footer">
             <div id="footercrtext">&copy; V!st@Cars(2021)</div>
             <div id="footerteltext">Telefoonnummer: 06 12345678</div>
+            <a id="loginbtn">Inloggen</a>
           </div>
       </footer>        
     </div>

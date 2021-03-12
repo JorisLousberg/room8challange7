@@ -54,3 +54,16 @@ body {
   font-size: 3vh;
   padding-top: 3.3vh;
 }
+
+#loginbtn {
+  float: left;
+  margin-left: 3vw;
+  text-decoration: none;
+  font-size: 3vh;
+  margin-top: 3vh;
+  background-color: #F1E4B0;
+  padding: 0.5vh;
+  border-radius: 1vh;
+  color: black;
+  font-weight: bold;
+}

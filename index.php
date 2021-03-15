@@ -27,7 +27,7 @@
 </section>
         </nav>        
         <div class="mainbody">
-          <section class="hoi">hier komt de slider</section>
+          <section class="hierkomtdeslideshow">hier komt de slider</section>
 
           <section id="infobox1">
             <section class="infobox1text">test test hoi hoi dit is infobox 1</section>

@@ -1,8 +1,8 @@
 <?php
 function connectDB() {
-    $dbhost = "localhost:3306";
+    $dbhost = "localhost";
     $dbusername = "Ced02";
-    $dbpass = "iT782^ty";
+    $dbpass = "V!st@_C@ll3ng3?";
     $dbname = "db_vistashowroom";
 
     try {

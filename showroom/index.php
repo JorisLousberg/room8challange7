@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/mainstyle.css">
+    <link rel="stylesheet" href="../css/showroom.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>V!st@Cars - Home</title>
+    <title>V!st@Cars - Showroom</title>
 </head>
 <body>
     <div class="pagecon">
@@ -30,7 +31,7 @@
 
 <div id="contentblok">
     <?php
-        require_once ('includes/connection.inc.php');
+        require_once('includes/connection.inc.php');
     
             $sql = "SELECT * FROM tb_cars";
 
@@ -51,12 +52,14 @@
             $resultimage = $stmt->fetchAll();
 
             foreach($resultimage as $keyimage => $rowimage) {
-
-                $car .= "<div class='cell'><div class='photo'><img src='./dbimages/" . $rowimage['name_image'] . "' width='475px' /></div>";
+                $modelnaam = "<div class='modelnaam'><span>" . $row['merk'] . " " . $row['model'] . "</span></div>";
+                $vraagprijs = "<div class='vraagprijs'>" . "&euro; " . $row['vraagprijs'] . "</div>";
+                $hoofdtitel = "<div class='hoofdtitel'>" . $modelnaam . $vraagprijs . "<div class= 'detailbutton'><a href='./includes/detailauto.inc.php?idauto=" . $row['id'] . "'><img src='./images/detail.png' width='45'></a></div></div></div>";
+                
+                
+                $car .= "<div class='cell'><div class='photo'><img src='./dbimages/" . $rowimage['name_image'] . "' width='475px' />" . $hoofdtitel . "</div>";
 
             }
-
-            $car .= "<div class='hoofdtitel'>" . $row['merk'] . " " . $row['model'] . " &euro; " . $row['vraagprijs'] . " " . "<div class= 'detailbutton'><a href='./includes/detailauto.inc.php?idauto=" . $row['id'] . "'><img src='./images/detail.png' width='45'></a></div></div></div>";
         
         }
 

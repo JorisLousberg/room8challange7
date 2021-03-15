@@ -26,7 +26,21 @@
     </nav>
 </section>
         </nav>        
-        <div class="mainbody"></div>
+        <div class="mainbody">
+          <section class="hoi">hier komt de slider</section>
+
+          <section id="infobox1">
+            <section class="infobox1text">test test hoi hoi dit is infobox 1</section>
+          </section>
+
+          <section id="infobox2">
+            <section class="infobox2text">test test hoi hoi dit is infobox 2</section>
+          </section>
+
+          <section id="infobox3">
+            <section class="infobox3text">test test hoi hoi dit is infobox 3</section>
+          </section>
+        </div>
         <footer>
           <div class="footer">
             <div id="footercrtext">&copy; V!st@Cars(2021)</div>

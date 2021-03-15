@@ -67,7 +67,65 @@ body {
 .mainbody {
   height: 80vh;
   width: 100vw;
+}
 
+#infobox1 {
+  width: 80vw;
+  height: 13vh;
+  margin: auto;
+  box-shadow: 5px 5px 15px #bbbbbb;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+#infobox2 {
+  width: 80vw;
+  height: 13vh;
+  margin: auto;
+  box-shadow: 5px 5px 15px #bbbbbb;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+#infobox3 {
+  width: 80vw;
+  height: 13vh;
+  margin: auto;
+  box-shadow: 5px 5px 15px #bbbbbb;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.hoi {
+  height: 35vh;
+  width: 85vw;
+  border: thin red;
+  box-shadow: 5px 5px 15px #bbbbbb;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 10vh;
+  background-color: white;
+}
+
+.infobox1text {
+  padding: 3%;
+  text-decoration: none;
+}
+
+.infobox2text {
+  padding: 3%;
+  text-decoration: none;
+}
+
+.infobox3text {
+  padding: 3%;
+  text-decoration: none;
 }
 
 /*FOOTER SETTINGS*/

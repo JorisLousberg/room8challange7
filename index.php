@@ -41,7 +41,7 @@
                         <div class="mySlides fade">
                             <div class="numbertext"><?php echo $i+1 ?> / <?php echo count($images) ?></div>
                             <img src="images/<?php echo $images[$i] ?>.jpg" style="width:100%">
-                            <div class="text">Caption Text</div>
+                            <div class="text"></div>
                         </div>
                         <?php
                             }

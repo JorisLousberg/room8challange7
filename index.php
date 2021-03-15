@@ -41,13 +41,16 @@
             <section class="infobox3text">test test hoi hoi dit is infobox 3</section>
           </section>
         </div>
-        <footer>
-          <div class="footer">
-            <div id="footercrtext">&copy; V!st@Cars(2021)</div>
-            <div id="footerteltext">Telefoonnummer: 06 12345678</div>
-            <a href="login/login.php" id="loginbtn">Inloggen</a>
-          </div>
-      </footer>        
+
+        <div>
+          <footer>
+            <div class="footer">
+              <div id="footercrtext">&copy; V!st@Cars(2021)</div>
+              <div id="footerteltext">Telefoonnummer: 06 12345678</div>
+              <a href="login/login.php" id="loginbtn">Inloggen</a>
+            </div>
+          </footer>
+        </div>          
     </div>
     
 </body>

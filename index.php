@@ -71,15 +71,15 @@
                 </section>
 
             <section id="infobox1">
-                <section class="infobox1text">test test hoi hoi dit is infobox 1</section>
+                <section class="infobox1text">Vanaf nu kunt u ook onze werkplaats bezoeken en reperaties laten uitvoeren.</section>
             </section>
 
             <section id="infobox2">
-                <section class="infobox2text">test test hoi hoi dit is infobox 2</section>
+                <section class="infobox2text">Wilt u contact met ons opnemen? Ga dan naar de <a href="contact.php">contact pagina</a>.</section>
             </section>
 
           <section id="infobox3">
-            <section class="infobox3text">test test hoi hoi dit is infobox 3</section>
+            <section class="infobox3text">Wij bieden goede service aan.</section>
           </section>
         </div>
 

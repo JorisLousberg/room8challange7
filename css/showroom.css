@@ -25,12 +25,20 @@ body {
     margin-top: 1vh;
 }
 
+.detailbutton img {
+    width: 4vh;
+    float: right;
+}
+
 .modelnaam {
     font-size: 3vh;
 }
 
 .vraagprijs {
-    width: auto;
     margin-top: 1vh;
     font-size: 2vh;
+}
+
+#contentblok {
+    height: 100%;
 }

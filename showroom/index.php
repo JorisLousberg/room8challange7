@@ -52,11 +52,18 @@
             $resultimage = $stmt->fetchAll();
 
             foreach($resultimage as $keyimage => $rowimage) {
-                $modelnaam = "<div class='modelnaam'><span>" . $row['merk'] . " " . $row['model'] . "</span></div>";
+                $detail = "<a class='detailbutton' href='./includes/detailauto.inc.php?idauto=" . $row['id'] . "'><img class='detail-btn' src='../images/detail_icon.svg'></a>";
+                $modelnaam = "<div class='modelnaam'><span>" . $row['merk'] . " " . $row['model'] . "</span>" . "</div>" . $detail;
                 $vraagprijs = "<div class='vraagprijs'>" . "&euro; " . $row['vraagprijs'] . "</div>";
-                $hoofdtitel = "<div class='hoofdtitel'>" . $modelnaam . $vraagprijs . "<div class= 'detailbutton'><a href='./includes/detailauto.inc.php?idauto=" . $row['id'] . "'><img src='./images/detail.png' width='45'></a></div></div></div>";
+                $hoofdtitel = "<div class='hoofdtitel'>" . $modelnaam . $vraagprijs . "</div></div>";
                 
                 
+                // if(empty($rowimage['name_image'])) {
+                //     $image = "image_unavailable.png";
+                // } else {
+                //     $image = $rowimage['name_image'];
+                // }
+
                 $car .= "<div class='cell'><div class='photo'><img src='./dbimages/" . $rowimage['name_image'] . "' width='475px' />" . $hoofdtitel . "</div>";
 
             }
@@ -69,7 +76,7 @@
 
     ?>
 </div>
-
+    </div>
         <footer>
           <div class="footer">
             <div id="footercrtext">&copy; V!st@Cars(2021)</div>

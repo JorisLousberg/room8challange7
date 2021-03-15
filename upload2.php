@@ -26,7 +26,7 @@
 
         header("Location: adminpage2.php?opslaan=success");
 
-    } //end function getDbConnection  
+    } //end function getDbConnection   
 
     $pdo =getDbConnection(); //stop return waarde in nieuwe variabele 
     

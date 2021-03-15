@@ -18,7 +18,7 @@
          </div>  
     </header>
 
-    <div class="uploadblock"> 
+    <div class="uploadblock">  
         
                  <div class="ImageUpload">        
                                     <?php 

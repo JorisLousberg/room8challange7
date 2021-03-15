@@ -121,7 +121,7 @@ img{
 	padding-left: 320px;
 }
 
-.menu_list li{
+.menu_list li{ 
 	display: inline-block;
 	text-transform: uppercase;
 	list-style: none;

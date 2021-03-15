@@ -24,6 +24,6 @@ function getDbConnection(){
     catch (\PDOException $e) {
         throw new \PDOException($e->getMessage(), (int)$e->getCode());
     }
-} // end function getDbConnection
+} // end function getDbConnection 
 
 $pdo = getDbConnection(); // stop return waarde in nieuwe variabele 

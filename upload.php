@@ -18,7 +18,7 @@
         ];
 
         $merk = $_POST['merk'];
-        $model = $_POST['model'];
+        $model = $_POST['model']; 
         $vraagprijs = $_POST['vraagprijs'];
         $apk = $_POST['apk'];
         $kmstand = $_POST['kmstand'];

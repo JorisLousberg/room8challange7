@@ -12,13 +12,13 @@
     <div class="pagecon">
         <nav>
         <section class="navContainer">
-    <div class="logoWrapper"> <a href="index.php"><img src="../images/vistacars.V3.png" alt="V!ist@ Cars" style="width:12vh;height:11vh;"></a> </div>
+    <div class="logoWrapper"> <a href="../index.php"><img src="../images/vistacars.V3.png" alt="V!ist@ Cars" style="width:12vh;height:11vh;"></a> </div>
     <nav class="navMenu">
         <ul class="navList">
-            <li class="navItem"><a class="navLink" href="index.php">Home</a></li>     
+            <li class="navItem"><a class="navLink" href="../index.php">Home</a></li>     
         </ul>
         <ul class="navList">
-            <li class="navItem"><a class="navLink" href="showroom/index.php">Showroom</a></li>     
+            <li class="navItem"><a class="navLink" href="../showroom/">Showroom</a></li>     
         </ul>
         <ul class="navList">
             <li class="navItem"><a class="navLink" href="contact.php">Contact</a></li>     

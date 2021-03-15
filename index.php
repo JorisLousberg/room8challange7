@@ -18,7 +18,7 @@
             <li class="navItem"><a class="navLink" href="index.php">Home</a></li>     
         </ul>
         <ul class="navList">
-            <li class="navItem"><a class="navLink" href="showroom/index.php">Showroom</a></li>     
+            <li class="navItem"><a class="navLink" href="../showroom/index.php">Showroom</a></li>     
         </ul>
         <ul class="navList">
             <li class="navItem"><a class="navLink" href="contact.php">Contact</a></li>     

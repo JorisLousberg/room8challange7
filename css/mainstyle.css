@@ -5,7 +5,6 @@
 body {
   margin: 0vh;
   padding: 0vh;
-  overflow-x: hidden;
 }
 
 .pagecon {
@@ -20,7 +19,7 @@ body {
 
 
 .navContainer {
-  width: 200vh;
+  width: 100vw;
   height: 10vh;
   display: flex;
   flex-flow: row nowrap;

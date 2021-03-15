@@ -1,0 +1,137 @@
+body{
+    background-color: #F1E4B0;
+	background-size: cover;
+	font-family: 'Dosis', sans-serif;
+    color: rgb(0, 0, 0);
+} 
+ 
+.return {
+    color: #FF6A00;
+    font-family: 'Dosis', sans-serif;
+}
+
+.return:hover {
+    color:  #FFC80F;
+    font-family: 'Dosis', sans-serif; 
+}
+ 
+/*showroom items */
+
+.uploadblock {
+    width:800px;
+    height:555px;
+    position: absolute;
+    background-color: #FFC80F;
+    margin-left:22%; 
+    text-align:center;
+    margin-top:1%;
+    border:12px solid #FF6A00;
+    border-style: double;
+    border-radius: 13px;
+}
+
+button {
+    background-color:white;
+    border-radius: 13px;
+    border:2px solid #FF6A00;
+    height:30px;
+    width:90px;
+}
+
+button:hover {
+    background-color: #FF6A00;
+    border:2px solid  #FFC80F;
+    color:rgb(0, 0, 0); 
+}
+
+.info {
+    background-color:white;
+    border-radius: 13px;
+    border:2px solid  #FFC80F;
+    height:30px;
+    width:160px;
+
+}
+input {
+    background-color:white;
+    border-radius: 13px;
+    border:2px solid #FF6A00;
+    height:30px;
+    width:180px;
+    margin-bottom: 5px;
+}
+
+input[type=file]{
+    background-color:rgba(143, 143, 143, 0);
+    border-color: rgba(0, 0, 0, 0);
+    margin-bottom: 5px;
+    margin-top:5px;
+} 
+
+#content{ 
+    width: 50%; 
+    margin: 20px auto; 
+    border: 1px solid #cbcbcb; 
+} 
+form{ 
+    width: 50%; 
+    margin: 30px auto; 
+} 
+form div{ 
+    margin-top: 25px; 
+} 
+#img_div{ 
+    width: 80%; 
+    padding: 5px; 
+    margin: 15px auto; 
+    border: 1px solid #cbcbcb; 
+} 
+#img_div:after{ 
+    content: ""; 
+    display: block; 
+    clear: both; 
+} 
+img{ 
+    float: left; 
+    margin: 5px; 
+    width: 300px; 
+    height: 140px; 
+}  
+
+/* navigatiebar */
+
+.header_menu{
+    top: 0px;
+    left: 0px;
+    right: 0px; 
+	width: auto;
+    height: 45px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    background-color: #FFC80F;
+    border:12px solid #FF6A00;
+    border-style: double; 
+    border-radius: 13px;
+}
+
+.menu_list{
+	width: 70%;
+	text-align: left;
+	padding-left: 320px;
+}
+
+.menu_list li{
+	display: inline-block;
+	text-transform: uppercase;
+	list-style: none;
+	letter-spacing: 2px;
+    padding-left: 320px;
+	color: rgb(255, 255, 255);
+}
+
+.menu_list li a{
+	color:rgba(0, 0, 0, 0.8);
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}

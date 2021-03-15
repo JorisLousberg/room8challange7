@@ -2,7 +2,7 @@
 function getDbConnection(){
 
     $dbhost     = "localhost";
-    $dbname     = "db_vistashowroom";
+    $dbname     = "db_gr8_ch7";
     $dbuser     = "Ced02";
     $dbpass     = "V!st@_C@ll3ng3?";
     $conn       = "";          // connection string
@@ -26,4 +26,4 @@ function getDbConnection(){
     }
 } // end function getDbConnection
 
-$pdo = getDbConnection(); // stop return waarde in nieuwe variabele
+$pdo = getDbConnection(); // stop return waarde in nieuwe variabele 

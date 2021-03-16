@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>V!st@Cars - Home</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 <body>
     <div class="pagecon">
@@ -29,46 +32,59 @@
         </ul>
     </nav>
         </section> 
-        </nav>        
-    <div class="mainbody">
-            <section>
-                    <!-- Slideshow container -->
-                    <div class="slideshow-container">
-                        <?php
-                            for ($i = 0; $i < count($images); $i++) {
-                        ?>
-                        <!-- Full-width images with number and caption text -->
-                        <div class="mySlides fade">
-                            <div class="numbertext"><?php echo $i+1 ?> / <?php echo count($images) ?></div>
-                            <img src="images/<?php echo $images[$i] ?>.jpg" style="width:100%">
-                            <div class="text"></div>
-                        </div>
-                        <?php
-                            }
-                        ?>
-                        <!-- Next and previous buttons -->
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        </div>
-                        <br>
+        </nav>
 
-                        <!-- The dots/circles -->
-                        <div style="text-align:center">
-                        <?php
-                            for ($i = 0; $i < count($images); $i++) {
-                        ?>
-                        <span class="dot" onclick="currentSlide(<?php echo $i+1 ?>)"></span>
-                        <?php
-                            }
-                        ?>
+    <div class="mainbody">
+
+        <section>
+            <div class="wrapper">
+                <div class="carousel owl-carousel">
+                    <div class="card card-1">
+                        <img src="images/vistacars.JPG">
+                        <div>Lexus F Sport ㅤ €30.000</div>
                     </div>
-                    <!--
-                    <p>
-                    <input type="submit" value="stop" onclick="stopslideshow();" />
-                    <input type="submit" value="start" onclick="startslideshow();" />
-                    <input type="submit" value="is running" onclick="valrunslideshow();" />
-                    -->
-                </section>
+                    <div class="card card-2">
+                        <img src="images/Toyotachr.jpg">
+                        <div>Toyota Chr</div>
+                    </div>
+                    <div class="card card-3">
+                        <img src="images/reclame.jpg">
+                        <div>Jaguar Reclame</div>
+                    </div>
+                    <div class="card card-4">
+                        <img src="images/LexusGS350.jpg">
+                        <div>Lexus GS350</div>
+                    </div>
+                    <div class="card card-5">
+                        <img src="images/LexusUX250hFSport.JPG">
+                        <div>Lexus UX250h</div>
+                    </div>
+                </div>
+            </div>
+            <script>
+            $(".carousel").owlCarousel({
+                margin: 20,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                responsive: {
+                0:{
+                    items:1,
+                    nav: false
+                },
+                600:{
+                    items:2,
+                    nav: false
+                },
+                1000:{
+                    items:3,
+                    nav: false
+                }
+                }
+            });
+            </script>
+        </section>
 
             <section id="infobox1">
                 <section class="infobox1text">Vanaf nu kunt u ook onze werkplaats bezoeken en reperaties laten uitvoeren.</section>

@@ -1,6 +1,8 @@
 * {
   font-family: 'Roboto', sans-serif;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,20 +13,14 @@ body {
   overflow-x: hidden;
 }
 
-.mainbody {
-  margin-top: 5vh;
-}
-
 .pagecon {
   top: 0vh;
   left: 0vh;
   width: 100%;
-  height: 180vh;
+  height: 130vh;
 }
 
 /*NAV SETTINGS*/
-
-
 .navContainer {
   width: 100vw;
   height: 10vh;
@@ -58,33 +54,92 @@ body {
   font-size: 3vh;
 }
 
-.navItem{
+.navItem {
   height: 4vh;
-    list-style-type: none; /* Remove bullets */
-    padding: 0vh; /* Remove padding */
-    margin: 0vh; /* Remove margins */
-  
+  list-style-type: none;
+  /* Remove bullets */
+  padding: 0vh;
+  /* Remove padding */
+  margin: 0vh;
+  /* Remove margins */
+
 }
-.navItem:hover{
+
+.navItem:hover {
   border-radius: 5px;
-  background-color:#F1E4B0 ;
+  background-color: #F1E4B0;
 }
+
 /*MAIN SETTINGS*/
 .mainbody {
   height: fit-content;
   width: 100vw;
+  margin-top: 5vh;
 }
 
-/**.hierkomtdeslideshow {
-  height: 35vh;
-  width: 85vw;
-  border: thin red;
-  box-shadow: 5px 5px 15px #bbbbbb;
+/*SLIDESHOW SETTINGS*/
+.wrapper {
+  width: 100%;
+}
+
+.carousel {
+  max-width: 1200px;
   margin: auto;
-  margin-top: 2vh;
-  margin-bottom: 10vh;
-  background-color: white;
-}*/
+  padding: 0 40px;
+}
+
+.carousel .card {
+  text-align: center;
+  margin: 5px 5px;
+  line-height: 80px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #bbbbbb;
+}
+
+.carousel .card-1 {
+  background: #FFC80F;
+}
+
+.carousel .card-2 {
+  background: #FFC80F;
+}
+
+.carousel .card-3 {
+  background: #FFC80F;
+}
+
+.carousel .card-4 {
+  background: #FFC80F;
+}
+
+.carousel .card-5 {
+  background: #FFC80F;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.owl-dot {
+  height: 15px;
+  width: 45px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #FF6A00 !important;
+  box-shadow: 5px 5px 15px #bbbbbb;
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+  background: #FFC80F !important;
+}
+/*SLIDESHOW SETTINGS END*/
 
 #infobox1 {
   width: 80vw;
@@ -128,7 +183,7 @@ body {
   padding: 3%;
   text-decoration: none;
 }
- 
+
 .infobox3text {
   padding: 3%;
   text-decoration: none;

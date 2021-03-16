@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #b0b0b0;
+    background-size: cover;
+    overflow: hidden;
+ }
+
+.proef{
+    width: 60%; 
+    height: 50%; /* width en height is even experimenteren */
+    margin: 40px auto 0 auto; /* positie is ook even experimenteren */
+    padding: 25px;
+    border: 1px solid #bbbbbb;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.voorwaarden{
+    font-size: 12px;
+}
+
+.button {
+    background-color: #3e5ca4;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  
+  .button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.35),0 17px 50px 0 rgba(0,0,0,0.28);
+  }
+
+  .telefoon{
+    padding: 8px;
+    border: 1px solid rgba(204, 204, 204, 0.986) #ccc;
+    width: 20%;
+  }
+
+  .info{
+    padding: 8px;
+    border: 1px solid rgba(204, 204, 204, 0.986) #ccc;
+    width: 40%;
+  }
+
+  input[type=text] {
+    border: none;
+    border-bottom: 2px solid #3e5ca4;
+  }
+
+  input[type=tel1] {
+    border: none;
+    border-bottom: 2px solid #3e5ca4;
+  }
+
+  input[type=email] {
+    border: none;
+    border-bottom: 2px solid #3e5ca4;
+  }
+
+  .offerte{
+    width: 60%; 
+    height: 600px; /* width en height is even experimenteren */
+    margin: 100px auto 0 auto; /* positie is ook even experimenteren */
+    padding: 25px;
+    border: 1px solid #bbbbbb;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}

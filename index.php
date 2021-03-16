@@ -28,7 +28,7 @@
             <li class="navItem"><a class="navLink" href="contact.php">Contact</a></li>     
         </ul>
     </nav>
-</section>
+        </section> 
         </nav>        
     <div class="mainbody">
             <section>

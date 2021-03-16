@@ -28,8 +28,72 @@
     </section>
 </nav>
 
+<?php 
+    require_once('includes/detailauto.inc.php');
+?>
+
+<div id="fotobox">
+        <img src="dbimages/<?php echo $foto?>">
+        <img src="dbimages/<?php echo $foto?>">
+        <img src="dbimages/<?php echo $foto?>">
+        <img src="dbimages/<?php echo $foto?>">
+</div>
 <div id="detailcontent">
-    <img>
+    <div class="info">
+        <h2>Kenmerken</h2>
+            <table>
+                <tr>    
+                    <th>Merk</th>
+                    <th>Model</th>
+                    <th>Bouwjaar</th>
+                    <th>Kleur</th>
+                    <th>Deuren</th>
+                </tr>
+                <tr>
+                    <td><?php echo $merk?></td>
+                    <td><?php echo $model?></td>
+                    <td><?php echo $bouwjaar?></td>
+                    <td><?php echo $kleur?></td>
+                    <td><?php echo $deur?></td>
+                </tr>
+            </table>
+    </div>
+    <div class="info">
+        <h2>Specificaties</h2>
+        <table>
+                <tr>    
+                    <th>Versnellingen</th>
+                    <th>Transmissie</th>
+                    <th>Brandstof</th>
+                    <th>Gewicht</th>
+                    <th>Kilometer Stand</th>
+                </tr>
+                <tr>
+                    <td><?php echo $versnel?></td>
+                    <td><?php echo $transmissie?></td>
+                    <td><?php echo $brandstof?></td>
+                    <td><?php echo $gewicht?></td>
+                    <td><?php echo $km?></td>
+                </tr>
+            </table>
+    </div>
+    <div class="info">
+        <h2>Extra Kenmerken/Specificaties</h2>
+        <table>
+                <tr>    
+                    <th>Airco</th>
+                    <th>ABS</th>
+                    <th>APK</th>
+                    <th>Stuurbekrachtiging</th>
+                </tr>
+                <tr>
+                    <td><?php echo $airco?></td>
+                    <td><?php echo $abs?></td>
+                    <td><?php echo $apk?></td>
+                    <td><?php echo $stuurbekracht?></td>
+                </tr>
+            </table>
+    </div>
 </div>
 
     <footer>

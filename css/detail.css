@@ -1,6 +1,50 @@
 #detailcontent {
-    border: 1px solid black;
     width: 130vh;
     height: 100%;
     margin: auto;
+}
+
+#fotobox {
+    border: 1px solid black;
+    height: 30vh;
+    width: 100%;
+    margin: auto;
+    display: inline-flex;
+    background-color: black;
+}
+
+#fotobox img {
+    width: 49vh;
+    height: 100%;
+    opacity: 50%;
+    transition: .3s;
+    border-right: 2px solid black;
+}
+
+#fotobox img:hover {
+    opacity: 100%;
+    transition: 0.3s;
+}
+
+.info {
+    padding-left: 5vh;
+    border-top: 1px solid black;
+    margin-top: 1vh;
+}
+
+h2, th {
+    font-weight: normal;
+}
+
+.info th {
+    color: rgb(72, 72, 72);
+}
+
+.info th, .info td {
+    width: 20vh;
+    text-align: left;
+}
+
+.info td {
+    font-size: 18px;
 }

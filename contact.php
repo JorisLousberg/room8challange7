@@ -28,7 +28,27 @@
             </section>
         </nav>
 
-    <div class="mainbody"></div>
+    <div class="mainbody">
+
+        <div id="coronacontainer">
+            <div class="corona"><p class="titel">Corona<div class="tekst">
+                <li>In verband met Corona kunt u onze showroom en werkplaats alleen op telefonische afspraak bezoeken.</li>
+                <li>Bij uw bezoek dient u uiteraard een mondkapje te dragen.</li>
+                <li>Wij voorzien u bij de ingang van handgel en tissues.</li>
+                <li>Indien u een proefrit wil, kan deze vanaf een van onze locaties starten of vanaf u thuis. Wij brengen de auto
+                dan naar u toe, en reinigen die voor- en achteraf.</li></div></p></div>
+        </div>
+
+        <div id="infocontainer">
+            <div class="corona"><p class="titel">Contact gegevens<div class="locatie">Locaties<br /> Maastricht: Heerderdwarsstraat 36<br />Sittard: Bergerweg 73<br /> Heerlen: Sint Barbarastraat 10<br /><br /></div><div class="email">Email: info@vistacars.nl<br />Telefoonnummer: 06 12345678</div>
+            <br /><div class="opening"> Openingstijden<br />Maandag 08:00 tot 17:00 uur<br />Dinsdag 08:00 tot 17:00 uur<br />Woensdag 08:00 tot 17:00 uur<br />Donderdag: 08:00 tot 17:00 uur<br />Vrijdag: 08:00 tot 17:00 uur<br /> Zaterdag 10:00 tot 14:00 uur </div></div></p></div>
+        </div>
+
+        <div id="reclamecontainer">
+            <div class="corona"><p class="photo"><img src="./images/reclame.jpg"></p></div>
+        </div>
+    
+    </div>
 
     <footer>
           <div class="footer">

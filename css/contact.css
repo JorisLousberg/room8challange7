@@ -1,0 +1,54 @@
+#coronacontainer{
+    width: 80%;
+    clear: both;
+    margin-top: 3%;
+    margin-left: 12%;
+  }
+
+  #infocontainer{
+    width: 80%;
+    clear: both;
+    margin-top: 2%;
+    margin-left: 12%;
+  }
+
+  #reclamecontainer{
+    width: 81%;
+    clear: both;
+    margin-top: 2%;
+    margin-left: 12%;
+  }
+  
+  .corona {
+    background-color: white;
+    border-radius: 5px;
+    padding: 2%;
+    box-shadow: 5px 5px 15px #bbbbbb;
+  }
+
+  .email{
+      width: 300px;
+      margin-left: 20%;
+  }
+
+  .titel{
+      font-weight: bold;
+      font-size: 22px;
+  }
+
+  .locatie{
+      width: 300px;
+      margin-left: 20%;
+  }
+
+  .opening{
+      width: 300px;
+      margin-left: 60%;
+      margin-top: -12.5%;
+  }
+
+  .photo{
+    border-radius: 5px;
+    margin-left: 1%;
+    width: 100%;
+  }

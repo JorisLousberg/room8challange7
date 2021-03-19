@@ -29,7 +29,7 @@
     </section> 
     </nav> 
 <?php
-    require_once ('includes/connection.inc.php');
+    require_once ('../showroom/includes/connection.inc.php');
 
         $sql = "SELECT merk, model, kenteken, vraagprijs FROM tb_cars WHERE id =" . $_GET['idauto'];
 
@@ -79,9 +79,13 @@ function verzend() {
 
 </script>
 
-<div id="footerbalk">
-  <p class="logo">V!ST@CARS © 2021</p>
-</div></div>
+        <footer>
+          <div class="footer">
+            <div id="footercrtext">&copy; V!st@Cars(2021)</div>
+            <div id="footerteltext">Telefoonnummer: 06 12345678</div>
+            <a href="login/login.php" id="loginbtn">Inloggen</a>
+          </div>
+        </footer>  
 
 </body>
 </html>

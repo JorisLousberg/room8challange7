@@ -10,17 +10,19 @@
 
         //print_r($result);
   
-        $sql = "SELECT name_image FROM tb_image WHERE auto_id =" . $_GET['idauto'];
+        $sql = "SELECT name_image FROM tb_image WHERE auto_id =" . $_GET['idauto'] . " LIMIT 4";
 
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
         $resultimage = $stmt->fetchAll();
-        $fotoautos = " ";
+        $fotoautos = "<div id='fotobox'>";
 
         foreach($resultimage as $key2 => $row2) {
-          $fotoautos = "<img src='dbimages/" . $row2['name_image'] . "' width='400px'>";
-          $foto = $row2['name_image'];
+          $fotoautos .= "<img src='dbimages/" . $row2['name_image'] . "' width='400px'>";
       }
+      $fotoautos .= "</div>";
+
+      echo $fotoautos;
 
     foreach($result as $key => $row) {
     

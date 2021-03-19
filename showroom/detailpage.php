@@ -32,12 +32,12 @@
     require_once('includes/detailauto.inc.php');
 ?>
 
-<div id="fotobox">
+<!-- <div id="fotobox">
         <img src="dbimages/<?php echo $foto?>">
         <img src="dbimages/<?php echo $foto?>">
         <img src="dbimages/<?php echo $foto?>">
         <img src="dbimages/<?php echo $foto?>">
-</div>
+</div> -->
 <div id="detailcontent">
     <div class="info">
         <h2>Kenmerken</h2>

@@ -40,6 +40,10 @@
 </div> -->
 <div id="detailcontent">
     <div class="info">
+        <?php echo "<span><b>" . $fullcarname . "</b></span>"?>
+        <?php echo "<span>" . $vraagprijs . "</span>"?>
+    </div>
+    <div class="specs">
         <h2>Kenmerken</h2>
             <table>
                 <tr>    
@@ -58,7 +62,7 @@
                 </tr>
             </table>
     </div>
-    <div class="info">
+    <div class="specs">
         <h2>Specificaties</h2>
         <table>
                 <tr>    
@@ -77,7 +81,7 @@
                 </tr>
             </table>
     </div>
-    <div class="info">
+    <div class="specs">
         <h2>Extra Kenmerken/Specificaties</h2>
         <table>
                 <tr>    

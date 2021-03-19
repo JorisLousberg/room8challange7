@@ -52,3 +52,32 @@
     margin-left: 1%;
     width: 100%;
   }
+
+  #infocontainer{
+    width: 80%;
+    clear: both;
+    margin-top: 2%;
+    margin-left: 12%;
+  }
+
+  #locatiecontainer {
+    padding: 3vh;
+    width: 30%; 
+    clear: inline-start;
+    margin-top: 2%;
+    margin-left: 10.5%;
+  } 
+
+  .locatieinfo {
+    background-color: white;
+    border-radius: 5px;
+    padding: 2%;
+    box-shadow: 5px 5px 15px #bbbbbb;
+    margin-top: 2%;
+  }
+
+  .titellocatie{
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 36%;
+}  

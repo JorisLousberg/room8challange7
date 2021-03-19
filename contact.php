@@ -44,6 +44,37 @@
             <br /><div class="opening"> Openingstijden<br />Maandag 08:00 tot 17:00 uur<br />Dinsdag 08:00 tot 17:00 uur<br />Woensdag 08:00 tot 17:00 uur<br />Donderdag: 08:00 tot 17:00 uur<br />Vrijdag: 08:00 tot 17:00 uur<br /> Zaterdag 10:00 tot 14:00 uur </div></div></p></div>
         </div>
 
+        <div id="locatiecontainer">
+            <div class="locatieinfo"><p class="titellocatie">‎‎ Maastricht <br><div class="tekst">
+                <div style="width: 100%"><iframe width="360" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.330567613278!2d5.711638415745692!3d50.84356257953165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0e98fd73aa0b5%3A0x191e5dfc65544371!2sHeerderdwarsstraat%2036%2C%206224%20LT%20Maastricht!5e0!3m2!1snl!2snl!4v1616147350422!5m2!1snl!2snl"></iframe></div>
+                    <br>
+                        <li>Maastricht: Heerderdwarsstraat 36 </li>
+                        <li>Email: info@vistacars.nl          </li>
+                        <li>Telefoonnummer: 06 12345678       </li>
+            </div></p></div>
+        </div>
+
+        <div id="locatiecontainer">
+            <div class="locatieinfo"><p class="titellocatie">‎‎ Sittard<br><div class="tekst">
+                <div style="width: 100%"><iframe width="360" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.1075948874345!2d5.838801915501314!3d50.995683855809126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0c79e98b8f159%3A0xac187411e918df3e!2sBergerweg%2073%2C%206135%20KD%20Sittard!5e0!3m2!1snl!2snl!4v1616147648411!5m2!1snl!2snl"></iframe></div>
+                    <br>
+                        <li>Sittard: Bergerweg 73       </li>
+                        <li>Email: info@vistacars.nl    </li>
+                        <li>Telefoonnummer: 06 12345678 </li> 
+            </div></p></div>
+        </div>
+
+        <div id="locatiecontainer">
+            <div class="locatieinfo"><p class="titellocatie">‎‎ Heerlen <br><div class="tekst">
+                <div style="width: 100%"><iframe width="360" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.0862183778527!2d5.990387715497966!3d50.903620762489076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0bc54505e26d9%3A0x733d2bedf2de5fd0!2sSint%20Barbarastraat%2010%2C%206415%20RV%20Heerlen!5e0!3m2!1snl!2snl!4v1616147774706!5m2!1snl!2snl"></iframe></div>
+                    <br> 
+                        <li>Heerlen: Sint Barbarastraat 10 </li>
+                        <li>Email: info@vistacars.nl       </li>
+                        <li>Telefoonnummer: 06 12345678    </li>
+            </div></p></div>
+        </div> 
+  
+
         <div id="reclamecontainer">
             <div class="corona"><p class="photo"><img src="./images/reclame.jpg"></p></div>
         </div>
@@ -59,5 +90,5 @@
     </footer>        
 </div>
     
-</body>
-</html>
+</body> 
+</html> 

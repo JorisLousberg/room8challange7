@@ -1,0 +1,50 @@
+#afspraakauto{
+    border: solid thin red;
+    width: 45%;
+    margin-left: 3%;
+    clear: both;
+}
+
+#afspraakklant{
+    border: solid thin green;
+    width: 45%;
+    margin-left: 50%;
+    clear: both;
+    margin-top: -34.5%;
+}
+
+#lijst{
+    background-color: white;
+    clear: both;
+    margin-left: 25%;
+    width: 45%;
+    padding: 1%;
+    box-shadow: 5px 5px 15px #bbbbbb;
+    border-radius: 5px;
+}
+
+.box{
+    background-color: white;
+    box-shadow: 5px 5px 15px #bbbbbb;
+    border-radius: 5px;
+    padding: 1%;
+    height: 550px;
+}
+
+.style{
+    width: 45%;
+    padding: 2px;
+}
+
+.plate {
+    margin-left: 50%;
+    width: 30%;
+    margin-top: -3%;
+    padding: 2px;
+}
+
+.planner {
+    margin-left: 80%;
+    margin-top: -3%;
+    padding: 2px;
+}

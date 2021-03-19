@@ -13,7 +13,7 @@
   }
 
   #reclamecontainer{
-    width: 81%;
+    width: 84%;
     clear: both;
     margin-top: 2%;
     margin-left: 12%;
@@ -35,7 +35,7 @@
       font-weight: bold;
       font-size: 22px;
   }
-
+ 
   .locatie{
       width: 300px;
       margin-left: 20%;
@@ -53,13 +53,7 @@
     width: 100%;
   }
 
-  #infocontainer{
-    width: 80%;
-    clear: both;
-    margin-top: 2%;
-    margin-left: 12%;
-  }
-
+/* google maps */
   #locatiecontainer {
     padding: 3vh;
     width: 30%; 
@@ -81,3 +75,98 @@
     font-size: 22px;
     margin-left: 36%;
 }  
+
+/* contactformulier */
+
+#contactcontainer{
+  width: 60%;
+  clear: both;
+  margin-top: 2%;
+  margin-left: 12%;
+}
+
+.contactinfo {
+  background-color: white;
+  border-radius: 5px;
+  padding: 2%;
+  box-shadow: 5px 5px 15px #bbbbbb;
+}
+
+.titelcontact{
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: 1%;
+}
+
+.contactopnemen {
+  width: 34vw;
+  margin: auto;
+  margin-top: 3vh;
+  box-shadow: 5px 5px 15px #bbbbbb;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.mailtel {
+  width: 14vw;
+  margin-top: 2%;
+  margin-left: 12%;
+  border-radius: 5px;
+}
+
+.mailtel_inf {
+  width: 11vw;
+  margin-top: 2%;
+  margin-left: 12%;
+  border-radius: 5px;
+}
+
+.subname {
+  width: 18vw;
+  margin-top: 2%;
+  margin-left: 12%;
+  border-radius: 5px;
+}
+ 
+.subname_info {
+  margin-top: 2%;
+  margin-left: 12%;
+  border-radius: 5px;
+}
+
+.adres {
+  width: 14vw;
+  margin-top: 2%;
+  margin-left: 12%;
+  border-radius: 5px;
+}
+
+.adres_info1 {
+  width: 11vw;
+  margin-top: 2%;
+  margin-left: 12%;
+  border-radius: 5px;
+}
+
+.adres_info2 {
+  width: 11vw;
+  margin-top: 2%;
+  margin-left: 12%;
+  border-radius: 5px;
+} 
+
+.message {
+  width: 29vw;
+  margin-top: 2%; 
+  margin-left: 12%;
+  border-radius: 5px;
+}
+
+.button {
+  width: 11vh;
+  height: 3vh;
+  padding: 1vh;
+  margin-top: 2%;
+  margin-left: 12%;
+  border-radius: 5px;
+}

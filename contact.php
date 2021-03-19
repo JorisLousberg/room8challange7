@@ -74,12 +74,62 @@
             </div></p></div>
         </div> 
   
+            <div id="contactcontainer">
+                    <div class="contactinfo"><p class="titelcontact"> Contact Opnemen <div class="tekst">
+                        <form action="" enctype="multipart/form-data" method="post">
 
-        <div id="reclamecontainer">
-            <div class="corona"><p class="photo"><img src="./images/reclame.jpg"></p></div>
-        </div>
+                                    <br /><br /><label for="phone">E-mail*:</label>
+                                    <input type="email" name="mail" placeholder="example@gmail.com" required> 
+
+                                    <br /><br /><label for="phone">Telefoonnummer*:</label>
+                                    <input type="tel" name="phone" placeholder="06 12345678">
+
+
+                                    <br /><br /><label for="">Onderwerp*:</label>
+                                        <select>
+                                            <option value="">Kies onderwerp</option>
+                                            <option value="klacht">Klacht</option>
+                                            <option value="feedback">Feedback</option>
+                                            <option value="vraag">Vraag</option>
+                                            <option value="proefrit">Proefrit</option>
+                                            <option value="afspaak maken">Afspraak Maken</option>
+                                            <option value="andere">Andere</option>
+                                        </select>
+
+                            <br /><br /><label for="phone">Naam*:</label>
+                            <input type="text" name="name" placeholder="Voornaam & Achternaam*" required>
+
+                            <br /><br /><label for="">Provincie:</label>
+                                <select name="provincie" id="provincie">
+                                    <option value="Drenthe">Drenthe</option>
+                                    <option value="Flevoland">Flevoland</option>
+                                    <option value="Friesland">Friesland</option>
+                                    <option value="Gelderland">Gelderland</option>
+                                    <option value="Groningen">Groningen</option>
+                                    <option value="nl_limburg" selected>Limburg</option>
+                                    <option value="Noord-Brabant">Noord-Brabant</option>
+                                    <option value="Noord-Holland">Noord-Holland</option>
+                                    <option value="Overijssel">Overijssel</option>
+                                    <option value="Utrecht">Utrecht</option>
+                                    <option value="Zeeland">Zeeland</option>
+                                    <option value="Zuid-Holland">Zuid-Holland</option>
+                                </select>
+ 
+                        <br /><br /><label for="phone">Adres:</label>
+                            <input type="text" name="postcode" placeholder="Postcode" required>
+                            <input type="text" name="huisnummer" placeholder="Huisnummer" required>
+                
+                        <br /><br /><label for="phone">Bericht:</label>
+                        <br /><textarea type="text" name="w3review" rows="8" cols="58" placeholder="Bericht(max 400 tekens)" maxlength="400"></textarea> <br/>
+
+                        <br /><input type="button" value="Verzenden" onclick="msg()">
+                </div></div></p></div>
+
+            <div id="reclamecontainer">
+                <div class="corona"><p class="photo"><img src="./images/reclame.jpg"></p></div>
+            </div>
     
-    </div>
+</div>
 
     <footer>
           <div class="footer">
@@ -91,4 +141,4 @@
 </div>
     
 </body> 
-</html> 
+</html>  

@@ -29,7 +29,8 @@
 .info {
     padding-left: 5vh;
     border-top: 1px solid black;
-    margin-top: 1vh;
+    margin-top: 5vh;
+    padding-top: 2vh;
 }
 
 h2, th {

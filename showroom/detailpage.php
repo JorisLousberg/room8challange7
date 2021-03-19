@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/mainstyle.css">
     <link rel="stylesheet" href="../css/detail.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>V!st@Cars - Showroom</title>
 </head>
 <body>
@@ -97,6 +98,10 @@
                     <td><?php echo $stuurbekracht?></td>
                 </tr>
             </table>
+    </div>
+    <div class="link-cont">
+        <a class="link" href="./offerte.php"><i class="fas fa-file-signature"></i> Offerte Aanvragen</a>
+        <a class="link" href="./includes/proefrit.inc.php"><i class="fas fa-car"></i> Proefrit Aanvragen</a>
     </div>
 </div>
 

@@ -36,6 +36,26 @@
     padding-top: 2vh;
 }
 
+.link-cont {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.link {
+    background-color: #FFC80F;
+    text-decoration: none;
+    color: black;
+    padding: 2vh;
+    font-size: 30px;
+    margin-right: 5vh;
+    border-radius: 10px;
+}
+
+.link:hover {
+    background-color: #ffd95b;
+    transition: .3s;
+}
+
 #price {
     float: right;
 }

@@ -28,24 +28,38 @@
 
 .info {
     padding-left: 5vh;
-    border-top: 1px solid black;
-    margin-top: 5vh;
+}
+
+.info span {
+    font-size: 30px;
+    display: block;
     padding-top: 2vh;
+}
+
+#price {
+    float: right;
+}
+
+.specs {
+    padding-left: 5vh;
+    margin-top: 2vh;
+    padding-top: 2vh;
+    border-top: 1px solid black;
 }
 
 h2, th {
     font-weight: normal;
 }
 
-.info th {
+.specs th {
     color: rgb(72, 72, 72);
 }
 
-.info th, .info td {
+.specs th, .specs td {
     width: 20vh;
     text-align: left;
 }
 
-.info td {
+.specs td {
     font-size: 18px;
 }

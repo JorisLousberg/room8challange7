@@ -44,6 +44,7 @@
             $abs = $row['abs_optie'];
             $apk = $row['apk'];
             $stuurbekracht = $row['stuurbekrachtiging'];
+            $fullcarname = $merk . " " .$model;
 
 
             

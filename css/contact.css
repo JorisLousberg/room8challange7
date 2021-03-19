@@ -63,7 +63,7 @@
   #locatiecontainer {
     padding: 3vh;
     width: 30%; 
-    clear: inline-start;
+    clear: both;
     margin-top: 2%;
     margin-left: 10.5%;
   } 

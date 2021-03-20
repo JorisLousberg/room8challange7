@@ -101,7 +101,7 @@
     </div>
     <div class="link-cont">
         <a class="link" href="./offerte.php"><i class="fas fa-file-signature"></i> Offerte Aanvragen</a>
-        <a class="link" href="./includes/proefrit.inc.php"><i class="fas fa-car"></i> Proefrit Aanvragen</a>
+        <a class="link" href="../includes/proefrit.inc.php"><i class="fas fa-car"></i> Proefrit Aanvragen</a>
     </div>
 </div>
 

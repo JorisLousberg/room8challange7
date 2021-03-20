@@ -9,10 +9,11 @@ body {
   overflow-x: hidden;
   margin: 0vh;
   padding: 0vh;
+  /*background-image: url();*/
   background-color: #F1E4B0;
   overflow-x: hidden;
 }
-
+ 
 .pagecon {
   top: 0vh;
   left: 0vh;
@@ -27,7 +28,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   /* background: rgb(255, 217, 0, 0.7) */
-  background: #FF6A00;
+  background: #FF6A00; 
 }
 
 .navMenu {

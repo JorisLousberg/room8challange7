@@ -32,8 +32,26 @@
 
 <?php
     require_once ('../showroom/includes/connection.inc.php');
+
+    if (isset($_POST['submit'])) {
+        $comm = preg_replace( "/\r\n/", "<BR>", $_POST['comm'] );
+        $sql = "UPDATE tb_customercar SET history = CONCAT(history, '<BR>" . $_POST['date'] . " " . $comm . "') WHERE kenteken = '" . $_POST['key'] . "'";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+
+        $sql = "INSERT INTO tb_appointment (kenteken, datum, time_from, time_to, lokatie, soort, leenauto) VALUES ('" . $_POST['key'] . "','" . $_POST['date'] . "','" . $_POST['time_from'] . "','" . $_POST['time_to'] . "','" . $_POST['location'] . "','" . $_POST['afspr'] . "','" . $_POST['lcar'] . "')";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+        
+        echo "Afspraak gemaakt voor " . $_POST['date'] . " van " . $_POST['time_from'] . " tot " . $_POST['time_to'];
+        sleep(2);
+        header("Location: afspraak.inc.php?kenteken=" . $_POST['key']);
+
+} elseif (isset($_GET['kenteken'])) {
     
-            $sql = "SELECT kenteken, merk, model, customer_id FROM tb_customercar WHERE kenteken='" . $_GET['kenteken'] . "'";
+            $sql = "SELECT kenteken, merk, model, customer_id, history FROM tb_customercar WHERE kenteken='" . $_GET['kenteken'] . "'";
 
             $stmt = $pdo->prepare($sql);
             $stmt->execute();
@@ -51,23 +69,26 @@
             $resultcustomer = $stmt->fetchAll();
 
             $appcust= "<div id='afspraakklant'>";
+            $appcust .= "<div class='box'>";
 
             foreach($resultcustomer as $key2 => $row2) {   
 
-                $appcust .= $row2['first_name'] . " " . $row2['last_name'] . " " . $row2['street'] . " " . $row2['house_number'] . " " . $row2['city'];
-            
+                $appcust .= "<div class='firstn'>Voornaam: </div><div class='fn'>" . $row2['first_name'] . "</div><div class='lastn'>Achternaam: </div><div class='ln'>" . $row2['last_name'] . "</div><div class='pcode'>Postcode: </div><div class='ac'>" . $row2['postcode'] . "</div><div class='str'>Straat: </div><div class='st'>" . $row2['street'] . "</div><div class='nmb'>Huisnummer: </div><div class='hn'>" . $row2['house_number'] . "</div><div class='cty'>Plaats: </div><div class='city'>" . $row2['city'] . "</div><div class='phonenmb'>Telefoonnummer: </div><div class='phone'>" . $row2['phone_number'] . "</div><div class='mail'>E-mail: </div><div class='emadress'>" . $row2['e_mail'] . "</div>";
+                $appcust .= "<div class='opmerkingen'><form method='post' enctype='multipart/form-data' name='afspraak' action='afspraak.inc.php?kenteken=" . $row['kenteken'] . "'><label for='comm'>Opmerkingen: </label><textarea id='comm' name='comm' rows='3' cols='50'></textarea><br /><label for='lcar'>Leen auto: </label><select id='lcar' name='lcar'><option value='nee'>nee</option><option value='ja'>ja</option></select><br /><label for='element'>Soort afspraak: </label><select id='element' name='afspr'><option value='apk'>APK</option><option value='gb'>Grote beurt</option><option value='kb'>Kleine beurt</option><option value='Showroom'>Showroom</option><option value='Overig'>Overig</option></select><label for='lokatie'><div class= 'pl'>Lokatie:</label><select id='lokatie' name='location'><option value='Maastricht'>Maastricht</option><option value='Sittard'>Sittard</option><option value='Heerlen'>Heerlen</option></select></div><br /><div class='datum'><label for='dat'>Datum: </label><input type='date' name='date' id='dat' required></div><div class='tijd'>Tijd van: <input type='time' name='time_from' id='tm' required> tot <input type='time' name='time_to' id='tm1' required></div><br><br><input type='submit' name='submit' class='verz' value='Verzenden'><input type='hidden' name='key' value='" . $row['kenteken'] . "'></form></div>";
+
             }
 
-            $appcust .= "</div>";
+            $appcust .= "</div></div>";
 
-            $appcar .= $row['merk'] . " " . $row['model'] . " " . $row['kenteken'];
+            $appcar .= "<div class='licence'>Kenteken: </div><div class='kt'>" . $row['kenteken'] . "</div><div class='brand'>Merk: </div><div class='mk'>" . $row['merk'] . "</div><div class='model'>Model: </div><div class='md'>" . $row['model'] . "</div><div class='work'>Werkplaats geschiedenis: </div><br /><div class='history'>" . $row['history'] . "</div>";
             
         }
-            $appcar .="</div></div>";   
-
+        
+        $appcar .="</div></div>";   
+ 
         echo $appcar;
         echo $appcust;
-
+    }
 ?>
     </div>
 

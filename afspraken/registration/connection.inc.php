@@ -2,9 +2,9 @@
 function getDbConnection(){
 
     $dbhost     = "localhost";
-    $dbname     = "db_vistashowroom";
-    $dbuser     = "kantine";
-    $dbpass     = "kantine";
+    $dbname     = "db_gr8_ch7";
+    $dbuser     = "GR8";
+    $dbpass     = "V!st@_GR8?";
     $conn       = "";          // connection string
     $pdo        = "";          // handler
     $charset = 'utf8mb4';

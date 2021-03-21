@@ -1,0 +1,48 @@
+
+body{
+    text-align: left;
+    font-size: 2vh;
+}
+.form{
+
+    background-color:  #FFC80F;
+    width: fit-content;
+    padding: 1vh;
+    border-radius: 5px;
+}
+.formcon{
+    position: absolute;
+    top: 15vh;
+    left: 5vh;
+}
+.datacon{
+    position: absolute;
+    top: 15vh;
+    right: 5vh;
+    width: fit-content;
+    height: fit-content;
+    background-color:  #FFC80F;
+    border-radius: 5px;
+}
+
+h3{
+    font-size: 2.8vh;
+}
+
+
+table{
+    font-size: 1.6vh;
+}
+.checkbox1{
+    font-size:2.5vh; 
+    background-color: transparent;
+}
+
+.title1{
+    background-color: transparent;
+    font-size: 3vh;
+}
+a{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+}

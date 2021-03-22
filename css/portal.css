@@ -1,0 +1,27 @@
+.cont {
+    width: 270px;
+    height: 230px;
+    background-color: #FFC80F;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    float: left;
+}
+
+.imag {
+    width: 100%;
+}
+
+.imag img {
+    width: 60%;
+}
+
+.tx {
+    width: 50%;
+    margin: auto;
+}
+
+#links {
+    width: 100%;
+    height: 100%;
+}

@@ -9,8 +9,8 @@ if ($registerclient == TRUE) { //if checkbox register client is true = sending c
                 $stmt->execute();
                 $result = $stmt->fetchAll();?>
 <?php
-  $sql = "INSERT INTO tb_customer (first_name, last_name, city, street, house_number, e_mail, phone_number) 
-  VALUES ('$firstname','$lastname','$city','$street','$housenm','$mail','$telnum')";
+  $sql = "INSERT INTO tb_customer (first_name, last_name, city, street, house_number, postcode, e_mail, phone_number) 
+  VALUES ('$firstname','$lastname','$city','$street','$housenm','$postnr','$mail','$telnum')";
   $stmt = $pdo->prepare($sql);
         $stmt->execute();
         $result = $stmt->fetchAll();

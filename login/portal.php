@@ -1,3 +1,12 @@
+<?php 
+session_start();
+    if(isset($_SESSION['username'])) {
+        $portalbtn = "<a href='includes/logout.inc.php' id='loginbtn'>Uitloggen</a>";
+    } else {
+        header("location:index.php");
+    }
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,37 +35,68 @@
         </nav>
     </section>
 </nav>
-<?php 
-    if(isset($_SESSION['username'])) {
-        die;
-    } else {
-        header("index.php");
-    }
-
-
-?>
-
 <h1>Portal</h1>
-<a href="includes/logout.inc.php">Logout</a>
 
 <section id="links">
-    <a class="link">
-        <div class="cont">
-            <div class="imag">
-                <img src="../images/wrench_icon.png">
-            </div>  
-            <div class="tx">
-                <span>Werkplaats</span>
+    <?php 
+        $werkplaats =
+        "<a href='../agenda.php' class='link'>
+            <div class='cont'>
+                <div class='imag'>
+                    <img src='../images/wrench_icon.png'>
+                </div>  
+                <div class='tx'>
+                    <span>Werkplaats</span>
+                </div>
             </div>
-        </div>
-    </a>
+        </a>";
+
+        $medewerker = 
+        "<a class='link'>
+            <div class='cont'>
+                <div class='imag'>
+                    <img src='../images/agenda_icon.png'>
+                </div>  
+                <div class='tx'>
+                    <span>Medewerker</span>
+                </div>
+            </div>
+        </a>";
+
+        $admin = 
+        "<a href='../adminpage.php' class='link'>
+            <div class='cont'>
+                <div class='imag'>
+                    <img src='../images/admin_icon.png'>
+                </div>  
+                <div class='tx'>
+                    <span>Admin</span>
+                </div>
+            </div>
+        </a>";
+
+        switch ($_SESSION['typeid']) {
+            case 0:
+                echo $werkplaats;
+            break;
+            case 1:
+                echo $werkplaats . $medewerker;
+            break;
+            case 2:
+                echo $werkplaats . $medewerker . $admin;
+            break;
+            default:
+            session_destroy();
+            echo "<span><b>Error:</b> Try logging in again.</span>";
+        }
+    ?>
 </section>   
 </div>
 <footer>
     <div class="footer">
         <div id="footercrtext">&copy; V!st@Cars(2021)</div>
         <div id="footerteltext">Telefoonnummer: 06 12345678</div>
-        <a href="../login/index.php" id="loginbtn">Inloggen</a>
+        <?php echo $portalbtn?>
         <div id="footercrtext"><b>Icons from thenounproject.com</b></div>
     </div>
 </footer>

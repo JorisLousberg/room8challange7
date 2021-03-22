@@ -19,27 +19,25 @@ session_start();
 </head>
 
 <body>
-<div class="pageconproef">
-        <nav>
-            <section class="navContainer">
-                <div class="logoWrapper"> <a href="../index.php"><img src="../images/vistacars.V3.png" alt="V!ist@ Cars" style="width:12vh;height:11vh;"></a> </div>
-                <nav class="navMenu">
-                    <ul class="navList">
-                        <li class="navItem"><a class="navLink" href="../index.php">Home</a></li>     
-                    </ul>
-                    <ul class="navList">
-                        <li class="navItem"><a class="navLink" href="../showroom/index.php">Showroom</a></li>     
-                    </ul>
-                    <ul class="navList">
-                        <li class="navItem"><a class="navLink" href="../contact.php">Contact</a></li>     
-                    </ul>
-                </nav>
-            </section>
+    <nav>
+    <section class="navContainer">
+
+        <div class="logoWrapper"> <a href="index.php"><img src="../images/vistacars.V3.png" alt="V!ist@ Cars" style="width:12vh;height:11vh;"></a> </div>
+        <nav class="navMenu">
+            <ul class="navList">
+                <li class="navItem"><a class="navLink" href="../index.php">Home</a></li>     
+            </ul>
+            <ul class="navList">
+                <li class="navItem"><a class="navLink" href="index.php">Showroom</a></li>     
+            </ul>
+            <ul class="navList">
+                <li class="navItem"><a class="navLink" href="../contact.php">Contact</a></li>     
+            </ul>
         </nav>
-
-    <div class="mainbody">
-
+    </section> 
+    </nav> 
 <?php
+
     require_once ('../showroom/includes/connection.inc.php');
 
         $sql = "SELECT merk, model, kenteken, vraagprijs FROM tb_cars WHERE id =" . $_GET['idauto'];
@@ -61,10 +59,10 @@ session_start();
         $proefrit= "<div class= 'proef'>";
 
         foreach($resultimage as $key2 => $row2) {
-            $proefrit .= "<img src='../showroom/dbimages/" . $row2['name_image'] . "' width='200px'>" . "<br /><br />";
+            $proefrit .= "<img src='../includes/showroom/dbimages/" . $row2['name_image'] . "' width='200px'>";
         }
 
-        $proefrit .= "<b><h2>Proefrit aanvragen</h2></b>" . "<br />" . "U wilt een proefrit aanvragen voor de" . " " . "<b>" .
+        $proefrit .= "<b><h2>Proefrit aanvragen</h2></b>" . " " . "U wilt een proefrit aanvragen voor de" . " " . "<b>" .
             $row['merk'] . " " . $row['model'] . " " . "van" . " &euro;" . $row['vraagprijs'] . " " . "</b>" .
             "met het kenteken" . " " . "<b>" . $row['kenteken'] . "</b> " . "<p id='click'><label for='phone'>Vul hier uw telefoonnummer in: </label><input class='telefoon' type='tel' id='phone' name='phone' autocomplete='off'>" . " " . 
              "</br>Wij bellen u zo spoedig mogelijk terug voor het maken van een afspraak." . "</br></br>" . "<button class='button button1' onclick='verzend()'>Verzenden</button>" . "</br></br>" . "Team V!st@Cars" . "</p>";
@@ -89,7 +87,6 @@ function verzend() {
 }
 
 </script>
-
 </div>
 
     <footer>
@@ -100,6 +97,5 @@ function verzend() {
           </div>
     </footer>        
 </div>
-    
 </body>
 </html>

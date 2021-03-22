@@ -1,3 +1,11 @@
+<?php 
+session_start();
+    if(empty($_SESSION['username'])) {
+        $portalbtn = "Inloggen";
+    } else {
+        $portalbtn = "Portal";
+    }
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -11,16 +19,25 @@
 </head>
 
 <body> 
-  
-    <ul>
-        <li><a href="../index.php">Home</a></li>
-        <li><a href="../occasions.php">Showroom</a></li>
-        <li><a href="../info.php">Informatie</a></li>
-        <li><a href="../contact.php">Contact</a></li> 
-    </ul> 
-
+<nav>
+    <section class="navContainer">
+            <div class="logoWrapper"> <a href="../index.php"><img src="../images/vistacars.V3.png" alt="V!ist@ Cars" style="width:12vh;height:11vh;"></a> </div>
+        <nav class="navMenu">
+            <ul class="navList">
+                <li class="navItem"><a class="navLink" href="../index.php">Home</a></li>     
+            </ul>
+            <ul class="navList">
+                <li class="navItem"><a class="navLink" href="../showroom/">Showroom</a></li>     
+            </ul>
+            <ul class="navList">
+                <li class="navItem"><a class="navLink" href="../contact.php">Contact</a></li>     
+            </ul>
+        </nav>
+    </section>
+</nav>
+<div class="pagecon">
 <?php
-    require_once ('./includes/connection.inc.php');
+    require_once ('includes/connection.inc.php');
 
         $sql = "SELECT merk, model, kenteken, vraagprijs FROM tb_cars WHERE id =" . $_GET['idauto'];
 
@@ -48,7 +65,7 @@
             $row['merk'] . " " . $row['model'] . " " . "van" . " &euro;" . $row['vraagprijs'] . " " . "</b>" .
             "met het kenteken" . " " . "<b>" . $row['kenteken'] . "</b> " . "<p id='click'>Vul hier uw gegevens in:<br><input class='info' type='text' id='fname' name='fname' autocomplete='off' placeholder='voornaam'><br>" . " " .
             "<input class='info' type='text' id='lname' name='lname' autocomplete='off' placeholder='achternaam'><br>" . " " . "<input class='info' type='tel1' id='phone' name='phone' autocomplete='off' placeholder='telefoonnummer'><br>" . " " . "<input class='info' type='email' id='email' name='email' placeholder='e-mail'  autocomplete='off'>" .
-            "<p id='inwissel'>Wilt u een auto inruilen? <label for='myCheck'>Ja:</label><input type='checkbox' id='myCheck' onclick='inruil()'></p>" . " " . "</br>" . "<button class='button button1' onclick='verzend()'>Verzenden</button>" . "</br></p></div>";
+            "<p id='inwissel'>Wilt u een auto inruilen? <label for='myCheck'>Ja: </label><input type='checkbox' id='myCheck' onclick='inruil()'></p>" . " " . "</br>" . "<button class='button button1' onclick='verzend()'>Verzenden</button>" . "</br></p></div>";
 
    
         echo $offerte;
@@ -78,5 +95,13 @@ function verzend() {
   <p class="logo">V!ST@CARS © 2021</p>
 </div></div>
 
+<footer>
+    <div class="footer">
+        <div id="footercrtext">&copy; V!st@Cars(2021)</div>
+        <div id="footerteltext">Telefoonnummer: 06 12345678</div>
+        <a href="../login/index.php" id="loginbtn"><?php echo $portalbtn?></a>
+    </div>
+</footer>   
+</div>
 </body>
 </html> 

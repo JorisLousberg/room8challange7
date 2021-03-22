@@ -11,7 +11,7 @@
     <title>V!st@Cars - Showroom</title>
 </head>
 <body>
-<div class="pagecon">
+<div class="pagecondetail">
 <nav>
     <section class="navContainer">
             <div class="logoWrapper"> <a href="../index.php"><img src="../images/vistacars.V3.png" alt="V!ist@ Cars" style="width:12vh;height:11vh;"></a> </div>
@@ -100,7 +100,7 @@
             </table>
     </div>
     <div class="link-cont">
-        <a class="link" href="./offerte.php"><i class="fas fa-file-signature"></i> Offerte Aanvragen</a>
+        <a class="link" href="./offerteaanvraag.php"><i class="fas fa-file-signature"></i> Offerte Aanvragen</a>
         <?php echo "<a class='link' href='../includes/proefrit.inc.php?idauto=" . $_GET['idauto'] . "'><i class='fas fa-car'></i> Proefrit Aanvragen</a>"?>
     </div>
 </div>

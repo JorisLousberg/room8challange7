@@ -2,11 +2,11 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/mainstyle.css" type="text/css">
     <link rel="stylesheet" href="../css/proefenofferte.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>V!st@Cars - Proefritaanvraag</title>
 </head>
 
@@ -29,6 +29,7 @@
     </section> 
     </nav> 
 <?php
+
     require_once ('../showroom/includes/connection.inc.php');
 
         $sql = "SELECT merk, model, kenteken, vraagprijs FROM tb_cars WHERE id =" . $_GET['idauto'];
@@ -50,7 +51,7 @@
         $proefrit= "<div class= 'proef'>";
 
         foreach($resultimage as $key2 => $row2) {
-            $proefrit .= "<img src='../dbimages/" . $row2['name_image'] . "' width='200px'>";
+            $proefrit .= "<img src='../includes/showroom/dbimages/" . $row2['name_image'] . "' width='200px'>";
         }
 
         $proefrit .= "<b><h2>Proefrit aanvragen</h2></b>" . " " . "U wilt een proefrit aanvragen voor de" . " " . "<b>" .

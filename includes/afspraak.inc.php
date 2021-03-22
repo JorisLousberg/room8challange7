@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>V!st@Cars - Home</title>
 </head>
+
 <body>
 <div class="pagecon">
         <nav>
@@ -34,6 +35,7 @@
     require_once ('../showroom/includes/connection.inc.php');
 
     if (isset($_POST['submit'])) {
+
         $comm = preg_replace( "/\r\n/", "<BR>", $_POST['comm'] );
         $sql = "UPDATE tb_customercar SET history = CONCAT(history, '<BR>" . $_POST['date'] . " " . $comm . "') WHERE kenteken = '" . $_POST['key'] . "'";
         $stmt = $pdo->prepare($sql);

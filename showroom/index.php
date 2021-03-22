@@ -11,7 +11,7 @@
     <title>V!st@Cars - Showroom</title>
 </head>
 <body>
-<div class="pagecon">
+<div class="pageconshowroom">
 <nav>
     <section class="navContainer">
             <div class="logoWrapper"> <a href="../index.php"><img src="../images/vistacars.V3.png" alt="V!ist@ Cars" style="width:12vh;height:11vh;"></a> </div>
@@ -82,7 +82,7 @@
           <div class="footer">
             <div id="footercrtext">&copy; V!st@Cars(2021)</div>
             <div id="footerteltext">Telefoonnummer: 06 12345678</div>
-            <a href="login/login.php" id="loginbtn">Inloggen</a>
+            <a href="../login/index.php" id="loginbtn">Inloggen</a>
           </div>
       </footer>        
     </div>

@@ -39,24 +39,24 @@
             <div class="wrapper">
                 <div class="carousel owl-carousel">
                     <div class="card card-1">
-                        <img src="images/vistacars.JPG">
-                        <div>Lexus F Sport ㅤ €30.000</div>
+                        <img src="showroom/dbimages/auto5.png">
+                        <div>Toyota RAV4ㅤ €80.500</div>
                     </div>
                     <div class="card card-2">
-                        <img src="images/Toyotachr.jpg">
-                        <div>Toyota CHR</div>
+                        <img src="showroom/dbimages/auto3.png">
+                        <div>BMW X3 ㅤ €60.416</div>
                     </div>
                     <div class="card card-3">
-                        <img src="images/reclame.jpg">
-                        <div>Jaguar Reclame</div>
+                        <img src="showroom/dbimages/auto2.jpg">
+                        <div>BMW 114i ㅤ €12.251</div>
                     </div>
                     <div class="card card-4">
-                        <img src="images/LexusGS350.jpg">
-                        <div>Lexus GS350</div>
+                        <img src="showroom/dbimages/auto1.jpg">
+                        <div>Hyundai Atos 1.1iㅤ €2.950</div>
                     </div>
                     <div class="card card-5">
-                        <img src="images/LexusUX250hFSport.JPG">
-                        <div>Lexus UX250h</div>
+                        <img src="showroom/dbimages/auto7.png">
+                        <div>Volkswagen Golf 8 ㅤ €100.000</div>
                     </div>
                 </div>
             </div>
@@ -102,11 +102,10 @@
             <div class="footer">
               <div id="footercrtext">&copy; V!st@Cars(2021)</div>
               <div id="footerteltext">Telefoonnummer: 06 12345678</div>
-              <a href="login/login.php" id="loginbtn">Inloggen</a>
+              <a href="login/index.php" id="loginbtn">Inloggen</a>
             </div>
           </footer>       
     </div>
-    
 </body>
 </html>
 <script src="js/app.js"></script>

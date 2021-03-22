@@ -1,3 +1,11 @@
+<?php 
+session_start();
+    if(empty($_SESSION['username'])) {
+        $portalbtn = "Inloggen";
+    } else {
+        $portalbtn = "Portal";
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,7 +67,7 @@
           <div class="footer">
             <div id="footercrtext">&copy; V!st@Cars(2021)</div>
             <div id="footerteltext">Telefoonnummer: 06 12345678</div>
-            <a href="login/index.php" id="loginbtn">Inloggen</a>
+            <a href="../login/index.php" id="loginbtn"><?php echo $portalbtn?></a>
           </div>
     </footer>        
 </div>

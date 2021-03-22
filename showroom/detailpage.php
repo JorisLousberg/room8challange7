@@ -1,3 +1,11 @@
+<?php 
+session_start();
+    if(empty($_SESSION['username'])) {
+        $portalbtn = "Inloggen";
+    } else {
+        $portalbtn = "Portal";
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,7 +108,7 @@
             </table>
     </div>
     <div class="link-cont">
-        <a class="link" href="./offerte.php"><i class="fas fa-file-signature"></i> Offerte Aanvragen</a>
+        <?php echo "<a class='link' href='./offerteaanvraag.php?idauto=" . $_GET['idauto'] . "'><i class='fas fa-file-signature'></i> Offerte Aanvragen</a>"?>
         <?php echo "<a class='link' href='../includes/proefrit.inc.php?idauto=" . $_GET['idauto'] . "'><i class='fas fa-car'></i> Proefrit Aanvragen</a>"?>
     </div>
 </div>
@@ -109,7 +117,7 @@
           <div class="footer">
             <div id="footercrtext">&copy; V!st@Cars(2021)</div>
             <div id="footerteltext">Telefoonnummer: 06 12345678</div>
-            <a href="login/index.php" id="loginbtn">Inloggen</a>
+            <a href="../login/index.php" id="loginbtn"><?php echo $portalbtn?></a>
           </div>
       </footer>        
     </div>

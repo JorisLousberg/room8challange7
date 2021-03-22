@@ -1,4 +1,11 @@
-
+<?php 
+session_start();
+    if(empty($_SESSION['username'])) {
+        $portalbtn = "Inloggen";
+    } else {
+        $portalbtn = "Portal";
+    }
+?>
 <!DOCTYPE HTML> <html>
 <head>
 <title>Afbeeldingen uploaden</title>

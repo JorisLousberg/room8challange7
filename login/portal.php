@@ -1,3 +1,12 @@
+<?php 
+session_start();
+    if(isset($_SESSION['username'])) {
+        $portalbtn = "<a href='includes/logout.inc.php' id='loginbtn'>Uitloggen</a>";
+    } else {
+        header("location:index.php");
+    }
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,18 +35,7 @@
         </nav>
     </section>
 </nav>
-<?php 
-    if(isset($_SESSION['username'])) {
-        die;
-    } else {
-        header("index.php");
-    }
-
-
-?>
-
 <h1>Portal</h1>
-<a href="includes/logout.inc.php">Logout</a>
 
 <section id="links">
     <a class="link">
@@ -50,13 +48,33 @@
             </div>
         </div>
     </a>
+    <a class="link">
+        <div class="cont">
+            <div class="imag">
+                <img src="../images/agenda_icon.png">
+            </div>  
+            <div class="tx">
+                <span>Medewerker</span>
+            </div>
+        </div>
+    </a>
+    <a class="link">
+        <div class="cont">
+            <div class="imag">
+                <img src="../images/admin_icon.png">
+            </div>  
+            <div class="tx">
+                <span>Admin</span>
+            </div>
+        </div>
+    </a>
 </section>   
 </div>
 <footer>
     <div class="footer">
         <div id="footercrtext">&copy; V!st@Cars(2021)</div>
         <div id="footerteltext">Telefoonnummer: 06 12345678</div>
-        <a href="../login/index.php" id="loginbtn">Inloggen</a>
+        <?php echo $portalbtn?>
         <div id="footercrtext"><b>Icons from thenounproject.com</b></div>
     </div>
 </footer>

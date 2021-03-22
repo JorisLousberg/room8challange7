@@ -19,7 +19,7 @@ session_start();
     <title>V!st@Cars - Showroom</title>
 </head>
 <body>
-<div class="pagecon">
+<div class="pagecondetail">
 <nav>
     <section class="navContainer">
             <div class="logoWrapper"> <a href="../index.php"><img src="../images/vistacars.V3.png" alt="V!ist@ Cars" style="width:12vh;height:11vh;"></a> </div>
@@ -31,7 +31,7 @@ session_start();
                 <li class="navItem"><a class="navLink" href="../showroom/">Showroom</a></li>     
             </ul>
             <ul class="navList">
-                <li class="navItem"><a class="navLink" href="contact.php">Contact</a></li>     
+                <li class="navItem"><a class="navLink" href="../contact.php">Contact</a></li>     
             </ul>
         </nav>
     </section>

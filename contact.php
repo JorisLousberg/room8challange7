@@ -18,7 +18,7 @@ session_start();
     <title>V!st@Cars - Home</title>
 </head>
 <body>
-<div class="pagecon">
+<div class="pageconcontact">
         <nav>
             <section class="navContainer">
                 <div class="logoWrapper"> <a href="index.php"><img src="images/vistacars.V3.png" alt="V!ist@ Cars" style="width:12vh;height:11vh;"></a> </div>

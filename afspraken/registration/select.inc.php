@@ -1,13 +1,14 @@
-<table style="undefined;table-layout: fixed; width: 819px">
+<table style="undefined;table-layout: fixed; width: 630px">
 <colgroup>
 <col style="width: 20px">
-<col style="width: 90px">
-<col style="width: 112px">
-<col style="width: 180px">
-<col style="width: 150px">
+<col style="width: 70px">
+<col style="width: 80px">
+<col style="width: 80px">
+<col style="width: 100px">
 <col style="width: 30px">
-<col style="width: 220px">
-<col style="width: 111px">
+<col style="width: 60px">
+<col style="width: 120px">
+<col style="width: 70px">
 </colgroup>
 <thead>
   <tr>
@@ -17,6 +18,7 @@
     <th><h3>stad</h3></th>
     <th><h3>straat</h3></th>
     <th><h3>nr</h3></th>
+    <th><h3>post nr</h3></th>
     <th><h3>E-mail</h3></th>
     <th><h3>tel nr</h3></th>
   </tr>
@@ -37,6 +39,7 @@
             echo "<th>" . $row['city'] . "</th> ";
             echo "<th>" . $row['street'] . "</th> ";
             echo "<th>" . $row['house_number'] . "</th> ";
+            echo "<th>" . $row['postcode'] . "</th> ";
             echo "<th>" . "<a href='mailto: abc@example.com'>".$row['e_mail'] . "</a>" . "</th> ";
             echo "<th>" . $row['phone_number'] . "</th> "; 
             echo "</tr>

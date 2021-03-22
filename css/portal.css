@@ -12,7 +12,7 @@ h1 {
     padding: 10px;
     border-radius: 10px;
     display: inline-block;
-    margin: 0 50px 0 50px;
+    margin: 50px;
 }
 
 .imag {
@@ -39,4 +39,9 @@ h1 {
     width: 100%;
     height: 100%;
     text-align: center;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
 }

@@ -38,36 +38,58 @@ session_start();
 <h1>Portal</h1>
 
 <section id="links">
-    <a class="link">
-        <div class="cont">
-            <div class="imag">
-                <img src="../images/wrench_icon.png">
-            </div>  
-            <div class="tx">
-                <span>Werkplaats</span>
+    <?php 
+        $werkplaats =
+        "<a href='../agenda.php' class='link'>
+            <div class='cont'>
+                <div class='imag'>
+                    <img src='../images/wrench_icon.png'>
+                </div>  
+                <div class='tx'>
+                    <span>Werkplaats</span>
+                </div>
             </div>
-        </div>
-    </a>
-    <a class="link">
-        <div class="cont">
-            <div class="imag">
-                <img src="../images/agenda_icon.png">
-            </div>  
-            <div class="tx">
-                <span>Medewerker</span>
+        </a>";
+
+        $medewerker = 
+        "<a class='link'>
+            <div class='cont'>
+                <div class='imag'>
+                    <img src='../images/agenda_icon.png'>
+                </div>  
+                <div class='tx'>
+                    <span>Medewerker</span>
+                </div>
             </div>
-        </div>
-    </a>
-    <a class="link">
-        <div class="cont">
-            <div class="imag">
-                <img src="../images/admin_icon.png">
-            </div>  
-            <div class="tx">
-                <span>Admin</span>
+        </a>";
+
+        $admin = 
+        "<a href='../adminpage.php' class='link'>
+            <div class='cont'>
+                <div class='imag'>
+                    <img src='../images/admin_icon.png'>
+                </div>  
+                <div class='tx'>
+                    <span>Admin</span>
+                </div>
             </div>
-        </div>
-    </a>
+        </a>";
+
+        switch ($_SESSION['typeid']) {
+            case 0:
+                echo $werkplaats;
+            break;
+            case 1:
+                echo $werkplaats . $medewerker;
+            break;
+            case 2:
+                echo $werkplaats . $medewerker . $admin;
+            break;
+            default:
+            session_destroy();
+            echo "<span><b>Error:</b> Try logging in again.</span>";
+        }
+    ?>
 </section>   
 </div>
 <footer>

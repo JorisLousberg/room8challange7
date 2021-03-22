@@ -82,7 +82,7 @@ session_start();
           <div class="footer">
             <div id="footercrtext">&copy; V!st@Cars(2021)</div>
             <div id="footerteltext">Telefoonnummer: 06 12345678</div>
-            <a href="../login/index.php" id="loginbtn"><?php echo $portalbtn?></a>
+            <a href="login/index.php" id="loginbtn"><?php echo $portalbtn?></a>
           </div>
     </footer>        
 </div>

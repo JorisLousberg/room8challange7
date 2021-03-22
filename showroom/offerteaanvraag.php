@@ -20,7 +20,7 @@
     </ul> 
 
 <?php
-    require_once ('./connection.inc.php');
+    require_once ('./includes/connection.inc.php');
 
         $sql = "SELECT merk, model, kenteken, vraagprijs FROM tb_cars WHERE id =" . $_GET['idauto'];
 

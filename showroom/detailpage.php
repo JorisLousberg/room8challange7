@@ -23,7 +23,7 @@
                 <li class="navItem"><a class="navLink" href="../showroom/">Showroom</a></li>     
             </ul>
             <ul class="navList">
-                <li class="navItem"><a class="navLink" href="contact.php">Contact</a></li>     
+                <li class="navItem"><a class="navLink" href="../contact.php">Contact</a></li>     
             </ul>
         </nav>
     </section>

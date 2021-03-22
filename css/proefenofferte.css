@@ -1,20 +1,13 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #b0b0b0;
-    background-size: cover;
-    overflow: hidden;
- }
-
 .proef{
     width: 60%; 
     height: 50%; /* width en height is even experimenteren */
     margin: 40px auto 0 auto; /* positie is ook even experimenteren */
     padding: 25px;
-    border: 1px solid #bbbbbb;
+    box-shadow: 5px 5px 15px #bbbbbb;
     background-color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    border-radius: 5px;
 }
 
 .voorwaarden{

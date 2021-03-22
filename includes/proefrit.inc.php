@@ -2,11 +2,11 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/mainstyle.css" type="text/css">
     <link rel="stylesheet" href="../css/proefenofferte.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>V!st@Cars - Proefritaanvraag</title>
 </head>
 
@@ -14,16 +14,16 @@
 <div class="pagecon">
         <nav>
             <section class="navContainer">
-                <div class="logoWrapper"> <a href="index.php"><img src="./images/vistacars.V3.png" alt="V!ist@ Cars" style="width:12vh;height:11vh;"></a> </div>
+                <div class="logoWrapper"> <a href="../index.php"><img src="../images/vistacars.V3.png" alt="V!ist@ Cars" style="width:12vh;height:11vh;"></a> </div>
                 <nav class="navMenu">
                     <ul class="navList">
-                        <li class="navItem"><a class="navLink" href="./index.php">Home</a></li>     
+                        <li class="navItem"><a class="navLink" href="../index.php">Home</a></li>     
                     </ul>
                     <ul class="navList">
-                        <li class="navItem"><a class="navLink" href="./showroom/index.php">Showroom</a></li>     
+                        <li class="navItem"><a class="navLink" href="../showroom/index.php">Showroom</a></li>     
                     </ul>
                     <ul class="navList">
-                        <li class="navItem"><a class="navLink" href="./contact.php">Contact</a></li>     
+                        <li class="navItem"><a class="navLink" href="../contact.php">Contact</a></li>     
                     </ul>
                 </nav>
             </section>
@@ -53,10 +53,10 @@
         $proefrit= "<div class= 'proef'>";
 
         foreach($resultimage as $key2 => $row2) {
-            $proefrit .= "<img src='../dbimages/" . $row2['name_image'] . "' width='200px'>";
+            $proefrit .= "<img src='../showroom/dbimages/" . $row2['name_image'] . "' width='200px'>" . "<br /><br />";
         }
 
-        $proefrit .= "<b><h2>Proefrit aanvragen</h2></b>" . " " . "U wilt een proefrit aanvragen voor de" . " " . "<b>" .
+        $proefrit .= "<b><h2>Proefrit aanvragen</h2></b>" . "<br />" . "U wilt een proefrit aanvragen voor de" . " " . "<b>" .
             $row['merk'] . " " . $row['model'] . " " . "van" . " &euro;" . $row['vraagprijs'] . " " . "</b>" .
             "met het kenteken" . " " . "<b>" . $row['kenteken'] . "</b> " . "<p id='click'><label for='phone'>Vul hier uw telefoonnummer in: </label><input class='telefoon' type='tel' id='phone' name='phone' autocomplete='off'>" . " " . 
              "</br>Wij bellen u zo spoedig mogelijk terug voor het maken van een afspraak." . "</br></br>" . "<button class='button button1' onclick='verzend()'>Verzenden</button>" . "</br></br>" . "Team V!st@Cars" . "</p>";

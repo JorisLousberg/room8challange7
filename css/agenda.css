@@ -1,0 +1,103 @@
+#planboxed{
+    background-color: white;
+    clear: both;
+    margin-left: 9%;
+    margin-top: 4%;
+    width: 80%;
+    padding: 1%;
+    box-shadow: 5px 5px 15px #bbbbbb;
+    border-radius: 5px;
+}
+
+.loco{
+    width: 10%;
+    font-size: 30px;
+    margin-left: 5%;
+    font-weight: 600;
+}
+
+.places{
+    width: 10%;
+    margin-left: 14%;
+    margin-top: -1.6%;
+    border-radius: 5px;
+}
+
+.send{
+    width: 40%;
+    padding: 5px;
+    margin-left: 22%;
+    margin-top: -4.5%;
+}
+
+.test{
+    padding: 5px;
+    background-color: #FFC80F;
+}
+
+.date{
+    width: 10%;
+    font-size: 25px;
+}
+
+.time{
+    width: 10%;
+    font-size: 25px;
+    margin-left: 20%;
+    margin-top: -2.6%;
+}
+
+.appointment{
+    width: 10%;
+    font-size: 25px;
+    margin-left: 45%;
+    margin-top: -2.3%;
+}
+
+.lice{
+    font-size: 25px;
+    margin-left: 71%;
+    margin-top: -2.3%;
+    width: 10%;
+}
+
+.datum{
+    width: 10%;
+    font-size: 18px;
+    margin-top: 1%;
+}
+
+.tijd{
+    width: 15%;
+    font-size: 18px;
+    margin-left: 20%;
+    margin-top: -1.7%;
+}
+
+.afspraak{
+    width: 15%;
+    font-size: 18px;
+    margin-left: 45%;
+    margin-top: -1.7%;
+}
+
+.kenteken{
+    width: 15%;
+    font-size: 18px;
+    margin-left: 71%;
+    margin-top: -1.7%;
+}
+
+.detailbutton img {
+    width: 10vh;
+ /*   float: right; */
+    margin-left: 90%;
+    margin-top: -4%;
+}
+
+.header {
+    width: 25%;
+    font-size: 20px;
+    margin-left: 5%;
+    font-weight: 100;
+}

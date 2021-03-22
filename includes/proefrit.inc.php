@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../csstemplates/main.css" type="text/css">
-    <link rel="stylesheet" href="../csstemplates/proefenofferte.css" type="text/css">
+    <link rel="stylesheet" href="../css/mainstyle.css" type="text/css">
+    <link rel="stylesheet" href="../css/proefenofferte.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <title>V!st@Cars - Proefritaanvraag</title>
 </head>
 
 <body>
-    <ul>
-        <li><a href="../index.php">Home</a></li>
-        <li><a href="../occasions.php">Showroom</a></li>
-        <li><a href="../info.php">Informatie</a></li>
-        <li><a href="../contact.php">Contact</a></li>
-    </ul>
+<div class="pagecon">
+        <nav>
+            <section class="navContainer">
+                <div class="logoWrapper"> <a href="index.php"><img src="./images/vistacars.V3.png" alt="V!ist@ Cars" style="width:12vh;height:11vh;"></a> </div>
+                <nav class="navMenu">
+                    <ul class="navList">
+                        <li class="navItem"><a class="navLink" href="./index.php">Home</a></li>     
+                    </ul>
+                    <ul class="navList">
+                        <li class="navItem"><a class="navLink" href="./showroom/index.php">Showroom</a></li>     
+                    </ul>
+                    <ul class="navList">
+                        <li class="navItem"><a class="navLink" href="./contact.php">Contact</a></li>     
+                    </ul>
+                </nav>
+            </section>
+        </nav>
+
+    <div class="mainbody">
+
 <?php
-    require_once ('./connection.inc.php');
+    require_once ('../showroom/includes/connection.inc.php');
 
         $sql = "SELECT merk, model, kenteken, vraagprijs FROM tb_cars WHERE id =" . $_GET['idauto'];
 
@@ -68,9 +82,16 @@ function verzend() {
 
 </script>
 
-<div id="footerbalk">
-  <p class="logo">V!ST@CARS © 2021</p>
-</div></div>
+</div>
 
+    <footer>
+          <div class="footer">
+            <div id="footercrtext">&copy; V!st@Cars(2021)</div>
+            <div id="footerteltext">Telefoonnummer: 06 12345678</div>
+            <a href="login/login.php" id="loginbtn">Inloggen</a>
+          </div>
+    </footer>        
+</div>
+    
 </body>
 </html>

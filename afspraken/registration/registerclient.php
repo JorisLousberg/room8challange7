@@ -43,7 +43,7 @@
                         <!--na het opslaan komt een js functie-->
                         <script>setTimeout(function () {
                         window.open('registerclient.php', '_top');
-                        }, 1000); </script><?php //na een seconde wordt de user naar het menu gestuurd
+                        }, 500); </script><?php //na een seconde wordt de user naar het menu gestuurd
                 } else {
                     //als er geen post dan toont hij het formulier
                     include_once('form.inc.php');

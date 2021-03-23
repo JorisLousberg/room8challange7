@@ -51,8 +51,8 @@ session_start();
             </div>
         </a>";
 
-        $medewerker = 
-        "<a class='link'>
+        $medewerker =
+        "<a href='../overzicht.php' class='link'>
             <div class='cont'>
                 <div class='imag'>
                     <img src='../images/employee_icon.png'>

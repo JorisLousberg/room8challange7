@@ -62,16 +62,6 @@
   }
 
 /* google maps */
- /* #locatiecontainer {
-    padding: 3vh;
-    width: 27.5vw; 
-    clear: both;
-    margin-top: 2%;
-    margin-left: 10.5%;
-    float: left;
-    display: inline-block;
-    position: relative;
-  } */
 
   #locatiecontainer {
     display: flex;

@@ -1,14 +1,14 @@
-<table style="undefined;table-layout: fixed; width: 660px">
+<table style="undefined;table-layout: fixed; width: 75vw">
 <colgroup>
-<col style="width: 20px">
-<col style="width: 70px">
-<col style="width: 80px">
-<col style="width: 80px">
-<col style="width: 100px">
-<col style="width: 30px">
-<col style="width: 60px">
-<col style="width: 150px">
-<col style="width: 70px">
+<col style="width: 2vw">
+<col style="width: 7vw">
+<col style="width: 8vw">
+<col style="width: 8vw">
+<col style="width: 10vw">
+<col style="width: 3vw">
+<col style="width: 6vw">
+<col style="width: 15vw">
+<col style="width: 8vw">
 </colgroup>
 <thead>
   <tr>

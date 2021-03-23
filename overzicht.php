@@ -63,7 +63,7 @@ function mySearch() {
 
 <?php
 
-    $title = "<div class= 'title'> Overzicht auto bestand </div><div class='search'><input type='text' id='myInput' onkeyup='mySearch()' placeholder=' Zoek op kenteken...'><br /></div><a href='afspraken/registration/form.inc.php'><div class= 'sturen'> Nieuwe klant </div></a>";
+    $title = "<div class= 'title'> Overzicht auto bestand </div><div class='search'><input type='text' id='myInput' onkeyup='mySearch()' placeholder=' Zoek op kenteken...'><br /></div><a href='afspraken/registration/registerclient.php'><div class= 'sturen'> Nieuwe klant </div></a>";
 
     require_once ('./showroom/includes/connection.inc.php');
     

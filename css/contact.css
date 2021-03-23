@@ -62,12 +62,43 @@
   }
 
 /* google maps */
-  #locatiecontainer {
+ /* #locatiecontainer {
     padding: 3vh;
-    width: 30%; 
+    width: 27.5vw; 
     clear: both;
     margin-top: 2%;
     margin-left: 10.5%;
+    float: left;
+    display: inline-block;
+    position: relative;
+  } */
+
+  #locatiecontainer {
+    display: flex;
+  }
+
+  #locatiecontainer1 {
+    padding: 3vh;
+    width: 27.5vw; 
+    clear: both;
+    margin-top: 1%;
+    margin-left: 10.5%;
+  } 
+
+  #locatiecontainer2 {
+    padding: 3vh; 
+    width: 27.5vw; 
+    clear: both;
+    margin-top: 1%;
+    margin-left: 0.65vh;
+  } 
+
+  #locatiecontainer3 {
+    padding: 3vh; 
+    width: 27.5vw; 
+    clear: both;
+    margin-top: 1%;
+    margin-left: 0.65vh; 
   } 
 
   .locatieinfo {

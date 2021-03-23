@@ -37,6 +37,12 @@
 #lokatie{
     border-radius: 5px;
     width: 20%;
+    margin-left: 9%;
+}
+
+#medewrk{
+    border-radius: 5px;
+    width: 20%;
     margin-left: 3%;
 }
 
@@ -55,7 +61,7 @@
 #tm{
     border-radius: 5px;
     width: 20%;
-    margin-left: 4%;
+    margin-left: 16%;
 }
 
 #tm1{
@@ -289,6 +295,13 @@
     width: 100%;
 }
 
+.mw{
+    margin-left: 50%;
+    margin-top: -6%;
+    width: 100%;
+    border-radius: 5px;
+}
+
 .datum{
     margin-top: -3%;
 }
@@ -303,6 +316,7 @@
     color: white;
     border-radius: 5px;
     margin-left: 38%;
+    margin-top: -5%;
     padding: 15px 32px;
     text-align: center;
 }

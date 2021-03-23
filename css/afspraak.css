@@ -19,6 +19,7 @@
     padding: 1%;
     box-shadow: 5px 5px 15px #bbbbbb;
     border-radius: 5px;
+    margin-top: 1%;
 }
 
 #comm{
@@ -304,4 +305,37 @@
     margin-left: 38%;
     padding: 15px 32px;
     text-align: center;
+}
+
+.title{
+    margin-left: 25%;
+    font-size: 30px;
+    width: 20%;
+}
+
+#myInput {
+    background-image: url('../images/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 5px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    background-size: 8%;
+    width: 30%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+.search{
+    margin-left: 57%;
+    margin-top: -2.7%;
+}
+
+.sturen{
+    margin-left: 78%;
+    border: solid thin grey;
+    width: 12%;
+    padding: 0.8%;
+    text-align: center;
+    margin-top: -3.5%;
+    background-color: #FFC80F;
 }

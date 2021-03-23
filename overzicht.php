@@ -38,7 +38,32 @@ session_start();
 
     <div class="mainbody">
 
+<script>
+function mySearch() {
+  // Declare variables
+  var input, filter, lijst, regel, item, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  lijst = document.getElementById("lijst");
+  regel = lijst.getElementsByClassName("regel");
+  // Loop through all lines, and hide those who don't match the search query
+  for (i = 0; i < regel.length; i++) {
+    item = regel[i].getElementsByClassName("plate")[0];
+    if (item) {
+      txtValue = item.textContent || item.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        regel[i].style.display = "";
+      } else {
+        regel[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
 <?php
+
+    $title = "<div class= 'title'> Overzicht auto bestand </div><div class='search'><input type='text' id='myInput' onkeyup='mySearch()' placeholder=' Zoek op kenteken...'><br /></div><a href='afspraken/registration/form.inc.php'><div class= 'sturen'> Nieuwe klant </div></a>";
 
     require_once ('./showroom/includes/connection.inc.php');
     
@@ -49,18 +74,20 @@ session_start();
             $resultlist = $stmt->fetchAll();
 
             $list= "<div id='lijst'>";
-
+           
             foreach($resultlist as $key => $row){
 
-                $list .= "<div class='style'>" . $row['merk'] . "  " . $row['model'] . "</div><div class='plate'>" . $row['kenteken'] . "</div><div class='planner'><a href='includes\afspraak.inc.php?kenteken=" . $row['kenteken'] . "'><img src='images\appointment.png' width='25px'></a></div>";
+                $list .= "<div class='regel'><div class='style'>" . $row['merk'] . "  " . $row['model'] . "</div><div id='item' class='plate'>" . $row['kenteken'] . "</div><div class='planner'><a href='includes\afspraak.inc.php?kenteken=" . $row['kenteken'] . "'><img src='images\appointment.png' width='25px'></a></div></div>";
 
             }
 
                 $list .="</div>";
 
+                echo $title;
                 echo $list;
          
 ?>
+
     </div>
 
     <footer>

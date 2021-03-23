@@ -55,7 +55,7 @@ session_start();
         "<a class='link'>
             <div class='cont'>
                 <div class='imag'>
-                    <img src='../images/agenda_icon.png'>
+                    <img src='../images/employee_icon.png'>
                 </div>  
                 <div class='tx'>
                     <span>Medewerker</span>

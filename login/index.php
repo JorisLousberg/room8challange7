@@ -36,20 +36,23 @@
         </nav>
     </section>
 </nav>
-
-<form method="post">
-    <div class="login-box">
-        <img src="../images/vistacars.V3.png">
-            <?php 
-            if(isset($message)) {
-                echo '<label class="error-txt">'.$message.'</label>';
-            }
-        ?>
-        <input class="textbox" autocomplete="off" type="text" placeholder="Gebruikersnaam" name="username" value="" />
-        <input class="textbox" type="password" placeholder="Wachtwoord" name="password" value="" />
-        <input class="button" type="submit" name="login" value="Inloggen" />
-    </div>
-</form>
+<section class="logincon">
+    <form method="post" autocomplete="off">
+        <div class="login-box">
+            <section class="imagecon">
+                <img src="../images/vistacars.V3.png" style="width:50vh;height:49vh;">
+            </section>
+                <?php 
+                if(isset($message)) {
+                    echo '<label class="error-txt">'.$message.'</label>';
+                }
+            ?>
+            <input class="textbox" autocomplete="new-password" type="text" STYLE="background-color: #FFC80F;" placeholder="Gebruikersnaam" name="username" value="" /><br />
+            <input class="textbox" type="password" autocomplete="new-password" STYLE="color: #000000; background-color: #FFC80F;" placeholder="Wachtwoord" name="password" value="" /><br />
+            <section class="buttoncon"><input class="button" type="submit" name="login" value="Inloggen" /></section>
+        </div>
+    </form>
+</section>
 
 <footer>
     <div class="footer">

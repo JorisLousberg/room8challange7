@@ -1,4 +1,4 @@
-<table style="undefined;table-layout: fixed; width: 630px">
+<table style="undefined;table-layout: fixed; width: 660px">
 <colgroup>
 <col style="width: 20px">
 <col style="width: 70px">
@@ -7,7 +7,7 @@
 <col style="width: 100px">
 <col style="width: 30px">
 <col style="width: 60px">
-<col style="width: 120px">
+<col style="width: 150px">
 <col style="width: 70px">
 </colgroup>
 <thead>

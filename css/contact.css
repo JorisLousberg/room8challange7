@@ -26,6 +26,14 @@
     margin-left: 12%;
     padding-bottom: 15vh;
   }
+
+  #autowaarde{
+    width: 84%;
+    clear: both;
+    margin-left: 12%;
+    padding-bottom: 15vh;
+    margin-top: -5%;
+  }
   
   .corona {
     background-color: white;
@@ -198,4 +206,12 @@
   margin-top: 2%;
   margin-left: 12%;
   border-radius: 5px;
+}
+
+.waarde{
+  background-color: white;
+  border-radius: 5px;
+  padding: 2%;
+  box-shadow: 5px 5px 15px #bbbbbb;
+  height: 5%;
 }

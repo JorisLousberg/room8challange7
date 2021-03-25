@@ -139,7 +139,10 @@ session_start();
             <div id="reclamecontainer">
                 <div class="corona"><p class="photo"><img src="./images/reclame.jpg"></p></div>
             </div>
-    
+
+            <div id="autowaarde">
+                        <div class="waarde">Wilt u een schatting van de dagwaarde van uw auto opvragen? <a href=https://www.viabovag.nl/inruilwaarde-auto-berekenen>Klik hier voor uw BOVAG waarde</a></div>
+            </div>
 </div>
 
     <footer>

@@ -37,19 +37,19 @@ session_start();
 </nav>
 <div class="pagecon">
 <?php
-    require_once ('includes/connection.inc.php');
+    require_once ('../showroom/includes/connection.inc.php');
 
-        $sql = "SELECT merk, model, kenteken, vraagprijs FROM tb_cars WHERE id =" . $_GET['idauto'];
+    $sql = "SELECT merk, model, kenteken, vraagprijs FROM tb_cars WHERE id =" . $_GET['idauto'];
 
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
-        $result = $stmt->fetchAll();
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll();
 
-        $sql = "SELECT name_image FROM tb_image WHERE auto_id =" . $_GET['idauto'] . " LIMIT 1";
+    $sql = "SELECT name_image FROM tb_image WHERE auto_id =" . $_GET['idauto'] . " LIMIT 1";
 
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
-        $resultimage = $stmt->fetchAll();
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $resultimage = $stmt->fetchAll();
 
         // print_r($resultimage);
 
@@ -58,7 +58,7 @@ session_start();
         $offerte= "<div class='proef'>";
 
         foreach($resultimage as $key2 => $row2) {
-            $offerte .= "<img src='../dbimages/" . $row2['name_image'] . "' width='200px'>";
+            $offerte .= "<img src='../includes/showroom/dbimages/" . $row2['name_image'] . "' width='200px'>";
         }
 
         $offerte .= "<b><h2>Offerte aanvragen</h2></b>" . " " . "U wilt een offerte aanvragen voor de" . " " . "<b>" .
@@ -90,10 +90,6 @@ function verzend() {
 }
 
 </script>
-
-<div id="footerbalk">
-  <p class="logo">V!ST@CARS © 2021</p>
-</div></div>
 
 <footer>
     <div class="footer">

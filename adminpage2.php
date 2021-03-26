@@ -18,7 +18,7 @@ session_start();
                 $portalbtn = "Portal";
             break;
         }
-    }
+    } 
 ?>
 <!DOCTYPE HTML> <html>
 <head>
@@ -53,7 +53,7 @@ session_start();
                                         include('showroom/includes/connection.inc.php'); 
 
                                         if(isset($_POST["submit"])) {
-                                            $target_dir = "./dbimages/";
+                                            $target_dir = "./showroom/dbimages/";
                                             //print_r($_FILES);
                                             //die; 
                                             $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);

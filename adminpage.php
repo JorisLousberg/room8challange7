@@ -2,8 +2,22 @@
 session_start();
     if(empty($_SESSION['username'])) {
         $portalbtn = "Inloggen";
+        $_SESSION['errortype'] = "1";
+        header("location:login/index.php");
     } else {
-        $portalbtn = "Portal";
+        switch($_SESSION['typeid']) {
+            case 0:
+                $_SESSION['errortype'] = "2";
+                header("location:login/portal.php");
+            break;
+            case 1:
+                $_SESSION['errortype'] = "2";
+                header("location:login/portal.php");
+            break;
+            case 2:
+                $portalbtn = "Portal";
+            break;
+        }
     }
 ?>
 <!DOCTYPE HTML> <html>
@@ -12,18 +26,25 @@ session_start();
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/adminpage.css">
+<link rel="stylesheet" type="text/css" href="css/mainstyle.css">
 </head> 
-
-<body>
-    <header>
-        <div class="header_menu">
-                <div class="menu_list">
-                        <ul>	
-                            <li><a href="../room8challange7/showroom/index.php">SHOWROOM</a></li>
-                        </ul>	
-                </div> 
-         </div>  
-    </header>
+<div class="pagecon">
+<nav>
+    <section class="navContainer">
+            <div class="logoWrapper"> <a href="../index.php"><img src="images/vistacars.V3.png" alt="V!ist@ Cars" style="width:12vh;height:11vh;"></a> </div>
+        <nav class="navMenu">
+            <ul class="navList">
+                <li class="navItem"><a class="navLink" href="../index.php">Home</a></li>     
+            </ul>
+            <ul class="navList">
+                <li class="navItem"><a class="navLink" href="../showroom/">Showroom</a></li>     
+            </ul>
+            <ul class="navList">
+                <li class="navItem"><a class="navLink" href="../contact.php">Contact</a></li>     
+            </ul>
+        </nav>
+    </section>
+</nav>
  
         <div class="uploadblock"> 
         
@@ -91,6 +112,15 @@ session_start();
                             <br><br>
                             <button type="submit" name="submit"> Opslaan </button>  
                     </form>   
-        </div>  
+        </div>
+        </div>
+        <footer>
+          <div class="footer">
+            <div id="footercrtext">&copy; V!st@Cars(2021)</div>
+            <div id="footerteltext">Telefoonnummer: 06 12345678</div>
+            <a href="login/index.php" id="loginbtn"><?php echo $portalbtn?></a>
+            <a href="login/includes/logout.inc.php" id="loginbtn">Uitloggen</a>
+          </div>
+      </footer>
 </body> 
 </html>  

@@ -1,11 +1,12 @@
 <?php 
 session_start();
-    if(isset($_SESSION['username'])) {
-        $portalbtn = "<a href='includes/logout.inc.php' id='loginbtn'>Uitloggen</a>";
-    } else {
+    if(empty($_SESSION['username'])) {
+        $portalbtn = "Inloggen";
+        $_SESSION['errortype'] = "1";
         header("location:index.php");
+    } else {
+        $portalbtn = "Portal";
     }
-    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +36,30 @@ session_start();
         </nav>
     </section>
 </nav>
-<h1>Portal</h1>
+<div id="titl">
+    <h1>Portal</h1>
+    <?php
+        if(isset($_SESSION['errortype'])) {
+            switch($_SESSION['errortype']) {
+                case "1":
+                    $errormsg = "U bent niet ingelogd";
+                    unset($_SESSION['errortype']);
+                break;
+                case "2":
+                    $errormsg = "Onvoldoende Rechten";
+                        unset($_SESSION['errortype']);
+                break;
+                default:
+                    $errormsg = "Unknown Error";
+                    unset($_SESSION['errortype']);
+                    }
+                    
+                    if(isset($errormsg)) {
+                        echo '<span id="error-msg"><b>Error: </b>'.$errormsg.'</span><br>';
+                    }
+                }
+                ?>
+</div>
 
 <section id="links">
     <?php 
@@ -96,7 +120,7 @@ session_start();
     <div class="footer">
         <div id="footercrtext">&copy; V!st@Cars(2021)</div>
         <div id="footerteltext">Telefoonnummer: 06 12345678</div>
-        <?php echo $portalbtn?>
+        <a href="includes/logout.inc.php" id="loginbtn">Uitloggen</a>
         <div id="footercrtext"><b>Icons from thenounproject.com</b></div>
     </div>
 </footer>

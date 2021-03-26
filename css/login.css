@@ -7,9 +7,10 @@
 .logincon{
     text-align: center;
     padding: 2vh;
-    position: absolute;
-    left: 40vw;
-    top: 15vh;
+    margin: 5vh auto;
+    /* position: absolute; */
+    /* left: 40vw; */
+    /* top: 15vh; */
     width: fit-content;
     height: fit-content;
     background-color: white;

@@ -1,4 +1,4 @@
-<?php 
+<?php
     if(empty($_SESSION['username'])) {
         $portalbtn = "Inloggen";
     } else {
@@ -42,10 +42,26 @@
             <section class="imagecon">
                 <img src="../images/vistacars.V3.png" style="width:50vh;height:49vh;">
             </section>
-                <?php 
-                if(isset($message)) {
-                    echo '<label class="error-txt">'.$message.'</label>';
+                <?php
+                if(isset($_SESSION['errortype'])) {
+                    switch($_SESSION['errortype']) {
+                        case "1":
+                            $errormsg = "U bent niet ingelogd";
+                            unset($_SESSION['errortype']);
+                        break;
+                        case "2":
+                            $errormsg = "Onvoldoende Rechten";
+                            unset($_SESSION['errortype']);
+                        break;
+                        default:
+                            $errormsg = "Unknown Error";
+                            unset($_SESSION['errortype']);
                 }
+                
+                if(isset($errormsg)) {
+                    echo '<span id="error-msg"><b>Error: </b>'.$errormsg.'</span><br>';
+                }
+            }
             ?>
             <input class="textbox" autocomplete="new-password" type="text" STYLE="background-color: #FFC80F;" placeholder="Gebruikersnaam" name="username" value="" /><br />
             <input class="textbox" type="password" autocomplete="new-password" STYLE="color: #000000; background-color: #FFC80F;" placeholder="Wachtwoord" name="password" value="" /><br />

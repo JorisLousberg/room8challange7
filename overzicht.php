@@ -2,8 +2,21 @@
 session_start();
     if(empty($_SESSION['username'])) {
         $portalbtn = "Inloggen";
+        $_SESSION['errortype'] = "1";
+        header("location:login/index.php");
     } else {
-        $portalbtn = "Portal";
+        switch($_SESSION['typeid']) {
+            case 0:
+                $_SESSION['errortype'] = "2";
+                header("location:login/portal.php");
+            break;
+            case 1:
+                $portalbtn = "Portal";
+            break;
+            case 2:
+                $portalbtn = "Portal";
+            break;
+        }
     }
 ?>
 <!DOCTYPE html>

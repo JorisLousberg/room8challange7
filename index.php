@@ -42,7 +42,7 @@ session_start();
         </nav>
 
     <div class="mainbody">
-
+    
         <section>
             <div class="wrapper">
                 <div class="carousel owl-carousel">

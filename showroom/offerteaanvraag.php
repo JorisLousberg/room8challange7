@@ -58,7 +58,7 @@ session_start();
         $offerte= "<div class='proef'>";
 
         foreach($resultimage as $key2 => $row2) {
-            $offerte .= "<img src='../dbimages/" . $row2['name_image'] . "' width='200px'>";
+            $offerte .= "<img src='dbimages/" . $row2['name_image'] . "' width='200px'>";
         }
 
         $offerte .= "<b><h2>Offerte aanvragen</h2></b>" . " " . "U wilt een offerte aanvragen voor de" . " " . "<b>" .
@@ -90,10 +90,6 @@ function verzend() {
 }
 
 </script>
-
-<div id="footerbalk">
-  <p class="logo">V!ST@CARS © 2021</p>
-</div></div>
 
 <footer>
     <div class="footer">

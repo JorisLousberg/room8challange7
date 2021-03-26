@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .pageconproef {
   top: 0vh;
   left: 0vh;

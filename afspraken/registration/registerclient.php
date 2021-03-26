@@ -1,3 +1,24 @@
+<?php 
+session_start();
+    if(empty($_SESSION['username'])) {
+        $portalbtn = "Inloggen";
+        $_SESSION['errortype'] = "1";
+        header("location:../../login/index.php");
+    } else {
+        switch($_SESSION['typeid']) {
+            case 0:
+                $_SESSION['errortype'] = "2";
+                header("location:login/portal.php");
+            break;
+            case 1:
+                $portalbtn = "Portal";
+            break;
+            case 2:
+                $portalbtn = "Portal";
+            break;
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,7 +84,8 @@
         <div class="footer">
             <div id="footercrtext">&copy; V!st@Cars(2021)</div>
             <div id="footerteltext">Telefoonnummer: 06 12345678</div>
-            <a href="../../login/index.php" id="loginbtn">Inloggen</a>
+            <a href="../../login/index.php" id="loginbtn"><?php echo $portalbtn?></a>
+            <a href="../../login/includes/logout.inc.php" id="loginbtn">Uitloggen</a>
         </div>
     </footer>       
 </div>

@@ -37,19 +37,19 @@ session_start();
 </nav>
 <div class="pagecon">
 <?php
-    require_once ('includes/connection.inc.php');
+    require_once ('../showroom/includes/connection.inc.php');
 
-        $sql = "SELECT merk, model, kenteken, vraagprijs FROM tb_cars WHERE id =" . $_GET['idauto'];
+    $sql = "SELECT merk, model, kenteken, vraagprijs FROM tb_cars WHERE id =" . $_GET['idauto'];
 
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
-        $result = $stmt->fetchAll();
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll();
 
-        $sql = "SELECT name_image FROM tb_image WHERE auto_id =" . $_GET['idauto'] . " LIMIT 1";
+    $sql = "SELECT name_image FROM tb_image WHERE auto_id =" . $_GET['idauto'] . " LIMIT 1";
 
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
-        $resultimage = $stmt->fetchAll();
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $resultimage = $stmt->fetchAll();
 
         // print_r($resultimage);
 
